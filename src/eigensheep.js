@@ -6,6 +6,7 @@ import unary from "./unary";
 import binary from "./binary";
 import arity from "./arity";
 import invoker from "./invoker";
+import useWith from "./use_with";
 
 var eigensheep = {
   map:     map,
@@ -15,7 +16,8 @@ var eigensheep = {
   unary:   unary,
   binary:  binary,
   arity:   arity,
-  invoker: invoker
+  invoker: invoker,
+  useWith: useWith
 };
 
 this.El = eigensheep;
