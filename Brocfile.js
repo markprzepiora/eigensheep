@@ -34,18 +34,37 @@ var amdBuild = es6('src', {
 
 var globalBuild = compileModules('src', {
   inputFiles: ['eigensheep.js'],
-  output:     '/eigensheep.prod.js',
+  output:     '/eigensheep.global.js',
   formatter:  'bundle'
 });
 
-var globalMinBuild = moveFile(globalBuild, {
-  srcFile: '/eigensheep.prod.js',
-  destFile: '/eigensheep.min.js'
-});
+function uglifiedBuild(tree, src, dest) {
+  if (!dest) {
+    dest = src.replace(/\.js$/, '.min.js');
+  }
 
-globalMinBuild = uglify(globalMinBuild, {
-  mangle: true,
-  compress: true
-});
+  var renamedTree = moveFile(tree, {
+    srcFile: src,
+    destFile: dest
+  });
 
-module.exports = mergeTrees([amdBuild, globalBuild, globalMinBuild]);
+  return uglify(renamedTree, {
+    mangle: true,
+    compress: true
+  });
+}
+
+var globalMinBuild = uglifiedBuild(globalBuild, '/eigensheep.global.js');
+var amdMinBuild = uglifiedBuild(amdBuild, '/eigensheep.amd.js');
+
+// var globalMinBuild = moveFile(globalBuild, {
+//   srcFile: '/eigensheep.global.js',
+//   destFile: '/eigensheep.global.min.js'
+// });
+
+// globalMinBuild = uglify(globalMinBuild, {
+//   mangle: true,
+//   compress: true
+// });
+
+module.exports = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
