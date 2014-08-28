@@ -1,0 +1,23 @@
+{
+  "name": "eigensheep",
+  "version": "0.0.0",
+  "description": "What do you call a baby eigensheep? A lamb, duh.",
+  "main": "index.js",
+  "dependencies": {
+    "es6-module-transpiler": "^0.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markprzepiora/eigensheep.git"
+  },
+  "author": "Mark Przepiora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markprzepiora/eigensheep/issues"
+  },
+  "homepage": "https://github.com/markprzepiora/eigensheep"
+}
