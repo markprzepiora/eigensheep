@@ -18,7 +18,7 @@ import nAry from "./n_ary";
  *      takesThreeArgs.length; //=> 3
  *      takesThreeArgs(1, 2, 3); //=> [1, 2, 3]
  *
- *      var takesTwoArgs = El.binary(1, takesThreeArgs);
+ *      var takesTwoArgs = El.binary(takesThreeArgs);
  *      takesTwoArgs.length; //=> 2
  *      // Only 2 arguments are passed to the wrapped function
  *      takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
