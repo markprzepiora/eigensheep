@@ -1,3 +1,6 @@
+// Private reference to toString function.
+var toString = Object.prototype.toString;
+
 /**
  * Tests whether or not an object is an array.
  *
