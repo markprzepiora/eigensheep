@@ -9,6 +9,7 @@
   "devDependencies": {
     "broccoli": "^0.12.3",
     "broccoli-compile-modules": "eventualbuddha/broccoli-compile-modules",
+    "broccoli-es6-concatenator": "^0.1.7",
     "broccoli-file-mover": "^0.3.6",
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-uglify-js": "^0.1.3"

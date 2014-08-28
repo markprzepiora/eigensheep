@@ -4,4 +4,8 @@ var eigensheep = {
   map: map
 };
 
-this.eigensheep = eigensheep;
+console.log(map(Number, ["1", "2"]));
+
+// this.eigensheep = eigensheep;
+
+export { map };
