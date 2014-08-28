@@ -1,5 +1,7 @@
 import map from "./map";
 
-console.log(map(Number, ["1", "2", "3"]));
+var eigensheep = {
+  map: map
+};
 
-export default { map: map };
+this.eigensheep = eigensheep;
