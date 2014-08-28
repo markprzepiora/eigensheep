@@ -12,11 +12,11 @@ var compileModules = require('broccoli-compile-modules'),
 //   destDir: '/bower_components'
 // });
 
-var loaderJS = pickFiles('bower_components/loader.js', {
-  srcDir: '/',
-  files: [ 'loader.js' ],
-  destDir: '/'
-});
+// var loaderJS = pickFiles('bower_components/loader.js', {
+//   srcDir: '/',
+//   files: [ 'loader.js' ],
+//   destDir: '/'
+// });
 
 // var jsTree = mergeTrees(['src', loaderJS]);
 // jsTree = es6(jsTree, {
@@ -26,26 +26,26 @@ var loaderJS = pickFiles('bower_components/loader.js', {
 //   outputFile: '/eigensheep.prod.js'
 // });
 
-var amdTree = es6('src', {
+var amdBuild = es6('src', {
   inputFiles: ['**/*.js'],
   wrapInEval: false,
   outputFile: '/eigensheep.amd.js'
 });
 
-var jsTree = compileModules('src', {
+var globalBuild = compileModules('src', {
   inputFiles: ['eigensheep.js'],
   output:     '/eigensheep.prod.js',
   formatter:  'bundle'
 });
 
-minJsTree = moveFile(jsTree, {
+var globalMinBuild = moveFile(globalBuild, {
   srcFile: '/eigensheep.prod.js',
   destFile: '/eigensheep.min.js'
 });
 
-minJsTree = uglify(minJsTree, {
+globalMinBuild = uglify(globalMinBuild, {
   mangle: true,
   compress: true
 });
 
-module.exports = mergeTrees([amdTree, jsTree, minJsTree]);
+module.exports = mergeTrees([amdBuild, globalBuild, globalMinBuild]);
