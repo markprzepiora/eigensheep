@@ -6,7 +6,10 @@
   "dependencies": {
     "es6-module-transpiler": "^0.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "broccoli": "^0.12.3",
+    "broccoli-compile-modules": "eventualbuddha/broccoli-compile-modules"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
