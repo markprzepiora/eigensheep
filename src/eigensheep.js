@@ -1,11 +1,9 @@
 import map from "./map";
+import concat from "./concat";
 
 var eigensheep = {
-  map: map
+  map: map,
+  concat: concat
 };
 
-console.log(map(Number, ["1", "2"]));
-
-// this.eigensheep = eigensheep;
-
-export { map };
+this.El = eigensheep;
