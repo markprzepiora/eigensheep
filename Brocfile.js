@@ -26,6 +26,12 @@ var loaderJS = pickFiles('bower_components/loader.js', {
 //   outputFile: '/eigensheep.prod.js'
 // });
 
+var amdTree = es6('src', {
+  inputFiles: ['**/*.js'],
+  wrapInEval: false,
+  outputFile: '/eigensheep.amd.js'
+});
+
 var jsTree = compileModules('src', {
   inputFiles: ['eigensheep.js'],
   output:     '/eigensheep.prod.js',
@@ -42,4 +48,4 @@ minJsTree = uglify(minJsTree, {
   compress: true
 });
 
-module.exports = mergeTrees([jsTree, minJsTree]);
+module.exports = mergeTrees([amdTree, jsTree, minJsTree]);
