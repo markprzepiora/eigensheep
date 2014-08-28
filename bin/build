@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -eux
+
+node_modules/es6-module-transpiler/bin/compile-modules convert \
+  -I src eigensheep.js \
+  -o dist/eigensheep.js
