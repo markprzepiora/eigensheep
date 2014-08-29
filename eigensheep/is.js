@@ -1,4 +1,4 @@
-import curry2 from "internal/curry2";
+import curry2 from "./internal/curry2";
 
 /**
  * See if an object (`val`) is an instance of the supplied constructor.

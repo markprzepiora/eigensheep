@@ -1,4 +1,4 @@
-import curry2 from "internal/curry2";
+import curry2 from "./internal/curry2";
 
 /**
  * Iterate over an input `list`, calling a provided function `fn` for each element in the

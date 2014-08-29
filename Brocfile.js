@@ -27,14 +27,16 @@ var compileModules = require('broccoli-compile-modules'),
 //   outputFile: '/eigensheep.prod.js'
 // });
 
-var amdBuild = es6('src', {
+var srcTree = pickFiles('eigensheep', { srcDir: '/', destDir: '/eigensheep' });
+
+var amdBuild = es6(srcTree, {
   inputFiles: ['**/*.js'],
   wrapInEval: false,
   outputFile: '/assets/eigensheep.amd.js'
 });
 
-var globalBuild = compileModules('src', {
-  inputFiles: ['eigensheep.js'],
+var globalBuild = compileModules(srcTree, {
+  inputFiles: ['eigensheep/r.js'],
   output:     '/assets/eigensheep.global.js',
   formatter:  'bundle'
 });
@@ -58,7 +60,6 @@ function uglifiedBuild(tree, src, dest) {
 var globalMinBuild = uglifiedBuild(globalBuild, '/assets/eigensheep.global.js');
 var amdMinBuild = uglifiedBuild(amdBuild, '/assets/eigensheep.amd.js');
 
-// var srcTree = pickFiles('src', { srcDir: '/', destDir: '/' });
 // var testTree = pickFiles('test', { srcDir: '/', destDir: 'test' });
 // var bowerTree = pickFiles('bower_components', { srcDir: '/', destDir: 'vendor' });
 // var testBuild = mergeTrees([srcTree, testTree, bowerTree]);

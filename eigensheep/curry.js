@@ -1,5 +1,5 @@
-import NO_ARGS_EXCEPTION from "internal/no_args_exception";
-import _concat from "internal/concat";
+import NO_ARGS_EXCEPTION from "./internal/no_args_exception";
+import _concat from "./internal/concat";
 import arity from "./arity";
 
 /**

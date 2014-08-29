@@ -1,7 +1,7 @@
-import curry2 from "internal/curry2";
-import hasMethod from "internal/has_method";
-import isArray from "internal/is_array";
-import _concat from "internal/concat";
+import curry2 from "./internal/curry2";
+import hasMethod from "./internal/has_method";
+import isArray from "./internal/is_array";
+import _concat from "./internal/concat";
 import is from "./is";
 
 /**

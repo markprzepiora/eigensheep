@@ -1,4 +1,4 @@
-import _slice from "internal/slice";
+import _slice from "./internal/slice";
 import curry from "./curry";
 import arity from "./arity";
 
