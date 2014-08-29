@@ -7,26 +7,6 @@ var compileModules = require('broccoli-compile-modules'),
     wrap           = require('broccoli-wrap'),
     exportTree     = require('broccoli-export-tree');
 
-// var bower = pickFiles('bower_components', {
-//   srcDir: '/',
-//   inputFiles: [ '**/*' ],
-//   destDir: '/bower_components'
-// });
-
-// var loaderJS = pickFiles('bower_components/loader.js', {
-//   srcDir: '/',
-//   files: [ 'loader.js' ],
-//   destDir: '/'
-// });
-
-// var jsTree = mergeTrees(['src', loaderJS]);
-// jsTree = es6(jsTree, {
-//   loaderFile: 'loader.js',
-//   inputFiles: ['eigensheep.js'],
-//   wrapInEval: false,
-//   outputFile: '/eigensheep.prod.js'
-// });
-
 var srcTree = pickFiles('eigensheep', { srcDir: '/', destDir: '/eigensheep' });
 
 var amdBuild = es6(srcTree, {
@@ -70,13 +50,12 @@ testBuild = es6(testBuild, {
   outputFile: '/assets/eigensheep.test.js',
   legacyFilesToAppend: ['vendor/qunit/qunit/qunit.js', 'test/test_helper.js']
 });
+testBuild = mergeTrees(['public', bowerTree, testBuild]);
 
-// var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
 var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild, testBuild]);
 
-// var exportTree = exportTree(combinedTree, {
-//   destDir: 'dist'
-// });
+var exportTree = exportTree(combinedTree, {
+  destDir: 'dist'
+});
 
-// module.exports = mergeTrees([combinedTree, exportTree]);
-module.exports = mergeTrees([combinedTree]);
+module.exports = mergeTrees([combinedTree, exportTree]);
