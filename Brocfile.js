@@ -29,12 +29,12 @@ var compileModules = require('broccoli-compile-modules'),
 var amdBuild = es6('src', {
   inputFiles: ['**/*.js'],
   wrapInEval: false,
-  outputFile: '/eigensheep.amd.js'
+  outputFile: '/assets/eigensheep.amd.js'
 });
 
 var globalBuild = compileModules('src', {
   inputFiles: ['eigensheep.js'],
-  output:     '/eigensheep.global.js',
+  output:     '/assets/eigensheep.global.js',
   formatter:  'bundle'
 });
 
@@ -54,8 +54,8 @@ function uglifiedBuild(tree, src, dest) {
   });
 }
 
-var globalMinBuild = uglifiedBuild(globalBuild, '/eigensheep.global.js');
-var amdMinBuild = uglifiedBuild(amdBuild, '/eigensheep.amd.js');
+var globalMinBuild = uglifiedBuild(globalBuild, '/assets/eigensheep.global.js');
+var amdMinBuild = uglifiedBuild(amdBuild, '/assets/eigensheep.amd.js');
 
 // var globalMinBuild = moveFile(globalBuild, {
 //   srcFile: '/eigensheep.global.js',
