@@ -60,18 +60,19 @@ function uglifiedBuild(tree, src, dest) {
 var globalMinBuild = uglifiedBuild(globalBuild, '/assets/eigensheep.global.js');
 var amdMinBuild = uglifiedBuild(amdBuild, '/assets/eigensheep.amd.js');
 
-// var testTree = pickFiles('test', { srcDir: '/', destDir: 'test' });
-// var bowerTree = pickFiles('bower_components', { srcDir: '/', destDir: 'vendor' });
-// var testBuild = mergeTrees([srcTree, testTree, bowerTree]);
-// testBuild = es6(testBuild, {
-//   inputFiles: ['**/*.js'],
-//   wrapInEval: false,
-//   outputFile: '/assets/eigensheep.test.js',
-//   legacyFilesToAppend: ['vendor/qunit/qunit/qunit.js', 'test/test_helper.js']
-// });
+var testTree = pickFiles('test', { srcDir: '/', destDir: 'test' });
+var bowerTree = pickFiles('bower_components', { srcDir: '/', destDir: 'vendor' });
+var testBuild = mergeTrees([srcTree, testTree, bowerTree]);
+testBuild = es6(testBuild, {
+  loaderFile: 'vendor/loader.js/loader.js',
+  inputFiles: ['eigensheep/**/*.js'],
+  wrapInEval: false,
+  outputFile: '/assets/eigensheep.test.js',
+  legacyFilesToAppend: ['vendor/qunit/qunit/qunit.js', 'test/test_helper.js']
+});
 
-var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
-// var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild, testBuild]);
+// var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
+var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild, testBuild]);
 
 // var exportTree = exportTree(combinedTree, {
 //   destDir: 'dist'
