@@ -18,7 +18,7 @@ Not yet.
 ## Building
 
 ```bash
-$ npm instal -g broccoli-cli
+$ npm install -g broccoli-cli
 $ git checkout https://github.com/markprzepiora/eigensheep && cd eigensheep
 $ npm install
 $ broccoli build dist
