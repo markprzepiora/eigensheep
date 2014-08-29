@@ -4,7 +4,8 @@ var compileModules = require('broccoli-compile-modules'),
     mergeTrees     = require('broccoli-merge-trees'),
     es6            = require('broccoli-es6-concatenator'),
     pickFiles      = require('broccoli-static-compiler'),
-    wrap           = require('broccoli-wrap');
+    wrap           = require('broccoli-wrap'),
+    exportTree     = require('broccoli-export-tree');
 
 // var bower = pickFiles('bower_components', {
 //   srcDir: '/',
@@ -57,14 +58,23 @@ function uglifiedBuild(tree, src, dest) {
 var globalMinBuild = uglifiedBuild(globalBuild, '/assets/eigensheep.global.js');
 var amdMinBuild = uglifiedBuild(amdBuild, '/assets/eigensheep.amd.js');
 
-// var globalMinBuild = moveFile(globalBuild, {
-//   srcFile: '/eigensheep.global.js',
-//   destFile: '/eigensheep.global.min.js'
+// var srcTree = pickFiles('src', { srcDir: '/', destDir: '/' });
+// var testTree = pickFiles('test', { srcDir: '/', destDir: 'test' });
+// var bowerTree = pickFiles('bower_components', { srcDir: '/', destDir: 'vendor' });
+// var testBuild = mergeTrees([srcTree, testTree, bowerTree]);
+// testBuild = es6(testBuild, {
+//   inputFiles: ['**/*.js'],
+//   wrapInEval: false,
+//   outputFile: '/assets/eigensheep.test.js',
+//   legacyFilesToAppend: ['vendor/qunit/qunit/qunit.js', 'test/test_helper.js']
 // });
 
-// globalMinBuild = uglify(globalMinBuild, {
-//   mangle: true,
-//   compress: true
+var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
+// var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild, testBuild]);
+
+// var exportTree = exportTree(combinedTree, {
+//   destDir: 'dist'
 // });
 
-module.exports = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild]);
+// module.exports = mergeTrees([combinedTree, exportTree]);
+module.exports = mergeTrees([combinedTree]);
