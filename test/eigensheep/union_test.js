@@ -23,4 +23,14 @@
       [1, '1']
     );
   });
+
+  test("can be curried", function() {
+    var extraItems = ['travel_insurance'];
+    var addToShoppingCart = union(extraItems);
+
+    deepEqual(
+      addToShoppingCart(['flight']),
+      ['travel_insurance', 'flight']
+    );
+  });
 })();
