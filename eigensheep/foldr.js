@@ -30,7 +30,7 @@ import checkForMethod from "./internal/check_for_method";
  *        return acc.concat(pair);
  *      };
  *
- *      foldr(numbers, flattenPairs, []); //=> [ 'c', 3, 'b', 2, 'a', 1 ]
+ *      foldr(flattenPairs, [], pairs); //=> [ 'c', 3, 'b', 2, 'a', 1 ]
  */
 var foldr = curry3(checkForMethod('foldr', function(fn, acc, list) {
     var idx = list.length;

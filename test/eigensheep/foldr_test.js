@@ -23,6 +23,18 @@
     equal(sum(numbers), 6);
   });
 
+  test("flattening an array of pairs", function() {
+    var pairs = [['a', 1], ['b', 2], ['c', 3]];
+    var flattenPairs = function(acc, pair) {
+      return acc.concat(pair);
+    };
+
+    deepEqual(
+      foldr(flattenPairs, [], pairs),
+      ['c', 3, 'b', 2, 'a', 1]
+    );
+  });
+
   test("folding from right to left", function() {
     var letters = ['h', 'e', 'y', 'a'];
     var concat = function(a, b) { return a + b };
