@@ -60,10 +60,11 @@ var foldl = curry3(checkForMethod('reduce', function _reduce(fn, acc, list) {
  *
  *      var letters = ['a', 'b', 'c'];
  *      var objectify = function(accObject, elem, idx, list) {
- *        return accObject[elem] = idx;
+ *        accObject[elem] = idx;
+ *        return accObject;
  *      };
  *
- *      foldl.idx(letters, objectify, {}); //=> { 'a': 0, 'b': 1, 'c': 2 }
+ *      foldl.idx(objectify, {}, letters); //=> { 'a': 0, 'b': 1, 'c': 2 }
  */
 foldl.idx = curry3(checkForMethod('foldl', function(fn, acc, list) {
     var idx = -1, len = list.length;
