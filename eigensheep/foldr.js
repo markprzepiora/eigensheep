@@ -63,10 +63,11 @@ var foldr = curry3(checkForMethod('foldr', function(fn, acc, list) {
  *
  *      var letters = ['a', 'b', 'c'];
  *      var objectify = function(accObject, elem, idx, list) {
- *        return accObject[elem] = idx;
+ *        accObject[elem] = idx;
+ *        return accObject;
  *      };
  *
- *      foldr.idx(letters, objectify, {}); //=> { 'c': 2, 'b': 1, 'a': 0 }
+ *      foldr.idx(objectify, {}, letters); //=> { 'c': 2, 'b': 1, 'a': 0 }
  */
 foldr.idx = curry3(checkForMethod('foldr', function(fn, acc, list) {
     var idx = list.length;
