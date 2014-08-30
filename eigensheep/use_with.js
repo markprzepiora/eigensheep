@@ -43,17 +43,17 @@ import arity from "./arity";
  *      var addDoubleAndSquare = ramda.useWith(addAll, double, square);
  *
  *      addDoubleAndSquare(10, 5); //≅ addAll(double(10), square(5));
- *      //=> 125
+ *      //=> 45
  *
  *      // Example of passing more arguments than transformers
  *      addDoubleAndSquare(10, 5, 100); //≅ addAll(double(10), square(5), 100);
- *      //=> 225
+ *      //=> 145
  *
  *      // But if you're expecting additional arguments that don't need transformation, it's best
  *      // to pass transformer functions so the resulting function has the correct arity
  *      var addDoubleAndSquareWithExtraParams = ramda.useWith(addAll, double, square, ramda.identity);
  *      addDoubleAndSquare(10, 5, 100); //≅ addAll(double(10), square(5), ramda.identity(100));
- *      //=> 225
+ *      //=> 145
  */
 export default function useWith(fn /*, transformers */) {
     var transformers = _slice(arguments, 1);
