@@ -12,19 +12,15 @@ using ES6 modules.
 
 ## Is it good?
 
-Not yet.
+Not yet. But we're getting there!
 
 
-## Building
+## Building and running tests
 
 ```bash
-$ npm install -g broccoli-cli
+$ npm install -g broccoli-cli testem
 $ git checkout https://github.com/markprzepiora/eigensheep && cd eigensheep
 $ npm install
 $ broccoli build dist
+$ testem
 ```
-
-
-## Todo
-
-Zomg add tests
