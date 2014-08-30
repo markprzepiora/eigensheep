@@ -18,7 +18,7 @@ import nAry from "./n_ary";
  *      takesTwoArgs.length; //=> 2
  *      takesTwoArgs(1, 2); //=> [1, 2]
  *
- *      var takesOneArg = ramda.unary(1, takesTwoArgs);
+ *      var takesOneArg = ramda.unary(takesTwoArgs);
  *      takesOneArg.length; //=> 1
  *      // Only 1 argument is passed to the wrapped function
  *      takesOneArg(1, 2); //=> [1, undefined]
