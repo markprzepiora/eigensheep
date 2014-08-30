@@ -1,0 +1,5 @@
+{
+  "framework": "qunit",
+  "cwd": "dist/",
+  "src_files": ["assets/eigensheep.test.js", "test/*/**/*.js"]
+}
