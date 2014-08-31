@@ -32,4 +32,32 @@ var mapObj = curry2(function _mapObject(fn, obj) {
     }, {}, keys(obj));
 });
 
+/**
+ * Like `mapObj`, but but passes additional arguments to the predicate function. The
+ * predicate function is passed three arguments: *(value, key, obj)*.
+ *
+ * @static
+ * @memberOf R
+ * @category List
+ * @param {Array} fn A function called for each property in `obj`. Its return value will
+ *        become a new property on the return object.
+ * @param {Object} obj The object to iterate over.
+ * @return {Object} A new object with the same keys as `obj` and values that are the result
+ *         of running each property through `fn`.
+ * @example
+ *
+ *      var values = { x: 1, y: 2, z: 3 };
+ *      var double = function(num, key, obj) {
+ *        return key + num;
+ *      };
+ *
+ *      ramda.mapObj(double, values); //=> { x: 'x2', y: 'y4', z: 'z6' }
+ */
+mapObj.idx = curry2(function mapObjectIdx(fn, obj) {
+    return foldl(function (acc, key) {
+        acc[key] = fn(obj[key], key, obj);
+        return acc;
+    }, {}, keys(obj));
+});
+
 export default mapObj;
