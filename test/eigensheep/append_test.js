@@ -9,4 +9,13 @@
       [1, 2, 3, 4]
     );
   });
+
+  test("creating a curried appender", function() {
+    var zAppender = append('z');
+
+    deepEqual(
+      zAppender(['x', 'y']),
+      ['x', 'y', 'z']
+    );
+  });
 })();

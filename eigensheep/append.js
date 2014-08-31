@@ -1,4 +1,5 @@
 import _concat from "./internal/concat";
+import curry2 from "./internal/curry2";
 
 /**
  * Returns a new list containing the contents of the given list, followed by the given
@@ -18,6 +19,8 @@ import _concat from "./internal/concat";
  *      ramda.append('tests', []); //=> ['tests']
  *      ramda.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
-export default function append(el, list) {
+var append = curry2(function (el, list) {
     return _concat(list, [el]);
-};
+});
+
+export default append;
