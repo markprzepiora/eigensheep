@@ -1,5 +1,6 @@
 {
   "framework": "qunit",
-  "cwd": "dist/",
-  "src_files": ["assets/eigensheep.test.js", "test/*/**/*.js"]
+  "cwd": ".",
+  "src_files": ["eigensheep/**/*.js", "test/**/*.js"],
+  "serve_files": ["dist/assets/eigensheep.amd.loader.js", "test/*/**/*.js"]
 }
