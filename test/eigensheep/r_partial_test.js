@@ -12,7 +12,7 @@
     equal(double(5), 10);
   });
 
-  test("creates a partially-applied version of an existing function", function() {
+  test("creates a partially-right-applied version of an existing function", function() {
     var greetMsJaneJones = rPartial(greet, 'Ms.', 'Jane', 'Jones');
     equal(greetMsJaneJones('Hello'), 'Hello, Ms. Jane Jones!');
   });
