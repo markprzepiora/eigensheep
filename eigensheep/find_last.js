@@ -19,7 +19,7 @@ import curry2 from "./internal/curry2";
  */
 var findLast = curry2(function _findLast(fn, list) {
     var idx = list.length;
-    while (--idx) {
+    while (--idx >= 0) {
         if (fn(list[idx])) {
             return list[idx];
         }

@@ -27,12 +27,21 @@
     );
   });
 
-  // test("doesn't go into an infinite loop on an empty array", function() {
-  //   var findLastEven = findLast(isEven);
+  test("works when the first element matches", function() {
+    var findLastEven = findLast(isEven);
 
-  //   // equal(
-  //   //   findLastEven([]),
-  //   //   undefined
-  //   // );
-  // });
+    equal(
+      findLastEven([2, 3, 5]),
+      2
+    );
+  });
+
+  test("doesn't go into an infinite loop on an empty array", function() {
+    var findLastEven = findLast(isEven);
+
+    equal(
+      findLastEven([]),
+      undefined
+    );
+  });
 })();
