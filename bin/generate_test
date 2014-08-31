@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -eux
+
+readonly MODULE_NAME="$1"
+readonly FILENAME="${2:-$MODULE_NAME}"
+
+cat templates/test_template.js |
+replace \
+  MODULE_NAME $MODULE_NAME \
+  FILENAME $FILENAME \
+  > test/eigensheep/${FILENAME}_test.js
+
