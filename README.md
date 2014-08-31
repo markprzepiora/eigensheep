@@ -21,6 +21,12 @@ Not yet. But we're getting there!
 $ npm install -g broccoli-cli testem
 $ git checkout https://github.com/markprzepiora/eigensheep && cd eigensheep
 $ npm install
-$ broccoli build dist
-$ testem
+
+# Run broccoli in one terminal
+$ broccoli serve
+
+# And testem in another
+$ testem -l phantomjs
 ```
+
+Tests will be run live as any production code or test code changes.
