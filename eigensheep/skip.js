@@ -14,7 +14,11 @@ import checkForMethod from "./internal/check_for_method";
  * @alias drop
  */
 var skip = curry2(checkForMethod('skip', function _skip(n, list) {
-    return _slice(list, n);
+    if (n < list.length) {
+      return _slice(list, n);
+    } else {
+      return [];
+    }
 }));
 
 export default skip;
