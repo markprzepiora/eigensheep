@@ -30,3 +30,12 @@ $ testem -l phantomjs
 ```
 
 Tests will be run live as any production code or test code changes.
+
+## TODO
+
+- Add remaining Ramda.js functions (have ~89/162 so far)
+- Add missing functions (isEqual from underscore/lodash!!)
+- Categorize functions (list functions, object functions, alises, etc.)
+- Create a custom builder
+- Fix typos/errors in documentation
+- Add CI
