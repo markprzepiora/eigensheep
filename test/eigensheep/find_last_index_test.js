@@ -27,21 +27,21 @@
     );
   });
 
-  // test("works when the first element matches", function() {
-  //   var findLastEvenIndex = findLastIndex(isEven);
+  test("works when the first element matches", function() {
+    var findLastEvenIndex = findLastIndex(isEven);
 
-  //   equal(
-  //     findLastEvenIndex([2, 3, 5]),
-  //     0
-  //   );
-  // });
+    equal(
+      findLastEvenIndex([2, 3, 5]),
+      0
+    );
+  });
 
-//   test("doesn't go into an infinite loop on an empty array", function() {
-//     var findLastEvenIndex = findLastIndex(isEven);
+  test("doesn't go into an infinite loop on an empty array", function() {
+    var findLastEvenIndex = findLastIndex(isEven);
 
-//     equal(
-//       findLastEvenIndex([]),
-//       -1
-//     );
-//   });
+    equal(
+      findLastEvenIndex([]),
+      -1
+    );
+  });
 })();
