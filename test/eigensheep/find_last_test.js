@@ -36,6 +36,15 @@
     );
   });
 
+  test("works when the last element matches", function() {
+    var findLastEven = findLast(isEven);
+
+    equal(
+      findLastEven([3, 5, 2]),
+      2
+    );
+  });
+
   test("doesn't go into an infinite loop on an empty array", function() {
     var findLastEven = findLast(isEven);
 
