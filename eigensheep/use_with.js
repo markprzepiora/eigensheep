@@ -9,7 +9,7 @@ import arity from "./arity";
  * new function. For example:
  *
  * ```javascript
- *   var useWithExample = invoke(someFn, transformerFn1, transformerFn2);
+ *   var useWithExample = R.useWith(someFn, transformerFn1, transformerFn2);
  *
  *   // This invocation:
  *   useWithExample('x', 'y');

@@ -7,7 +7,8 @@ import max from "../max";
  * Create a predicate wrapper which will call a pick function (all/any) for each predicate
  *
  * @private
- * @see all, any
+ * @see R.every
+ * @see R.some
  */
 // TODO: document, even for internals...
 export default function _predicateWrap(predPicker) {

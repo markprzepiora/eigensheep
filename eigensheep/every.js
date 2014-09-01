@@ -16,8 +16,8 @@ import curry2 from "./internal/curry2";
  *      var lessThan2 = flip(lt)(2);
  *      var lessThan3 = flip(lt)(3);
  *      var xs = range(1, 3); //= [1, 2]
- *      all(lessThan2)(xs); //= false
- *      all(lessThan3)(xs); //= true
+ *      every(lessThan2)(xs); //= false
+ *      every(lessThan3)(xs); //= true
  */
 var every = curry2(function(fn, list) {
     var i = -1;

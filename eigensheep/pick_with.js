@@ -15,7 +15,7 @@ import curry2 from "./internal/curry2";
  * @param {Object} obj The object to copy from
  * @return {Object} A new object with only properties that satisfy `pred`
  *         on it.
- * @see pick
+ * @see R.pick
  * @example
  *
  *      function isUpperCase(val, key, object) { return key.toUpperCase() === key; }

@@ -7,7 +7,7 @@ import flip from "./flip";
  *
  * @func
  * @memberOf R
- * @see prop
+ * @see R.prop
  * @category Object
  * @param {Object} obj The object to query
  * @param {String} prop The property name

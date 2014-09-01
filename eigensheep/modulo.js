@@ -12,7 +12,8 @@ import curry2 from "./internal/curry2";
  * @param {number} a The value to the divide.
  * @param {number} b The pseudo-modulus
  * @return {number} The result of `b % a`.
- * @see moduloBy, mathMod
+ * @see R.moduloBy
+ * @see R.mathMod
  * @example
  *
  *      modulo(17, 3) // => 2
