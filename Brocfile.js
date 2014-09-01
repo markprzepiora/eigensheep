@@ -16,7 +16,7 @@ var amdBuild = es6(srcTree, {
 });
 
 var globalBuild = compileModules(srcTree, {
-  inputFiles: ['eigensheep/r.js'],
+  inputFiles: ['eigensheep/installers/window.js'],
   output:     '/assets/eigensheep.global.js',
   formatter:  'bundle'
 });
