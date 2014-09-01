@@ -5,7 +5,7 @@ import isEmpty from "./is_empty";
  * Creates a new list out of the two supplied by creating each possible
  * pair from the lists.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} as The first list.

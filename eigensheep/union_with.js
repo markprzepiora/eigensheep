@@ -6,7 +6,7 @@ import _concat from "./internal/concat";
  * Combines two lists into a set (i.e. no duplicates) composed of the elements of each list.  Duplication is
  * determined according to the value returned by applying the supplied predicate to two list elements.
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Function} pred

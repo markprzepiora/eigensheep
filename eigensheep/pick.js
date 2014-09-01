@@ -6,7 +6,7 @@ import _contains from "./internal/contains";
  * Returns a partial copy of an object containing only the keys specified.  If the key does not exist, the
  * property is ignored.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Array} names an array of String propery names to copy onto a new object

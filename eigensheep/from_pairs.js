@@ -3,7 +3,7 @@ import _isArray from "./internal/is_array";
 /**
  * Creates a new object out of a list key-value pairs.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} An array of two-element arrays that will be the keys and values of the ouput object.

@@ -6,7 +6,7 @@ import subtract from "./subtract";
  * curried. Probably more useful when partially applied than
  * `subtract`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} a The first value.

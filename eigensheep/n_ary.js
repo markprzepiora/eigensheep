@@ -4,7 +4,7 @@ import mkArgStr from "./internal/mk_arg_str";
  * Wraps a function of any arity (including nullary) in a function that accepts exactly `n`
  * parameters. Any extraneous parameters will not be passed to the supplied function.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {number} n The desired arity of the new function.

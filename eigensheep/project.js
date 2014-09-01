@@ -6,7 +6,7 @@ import useWith from "./use_with";
 /**
  * Reasonable analog to SQL `select` statement.
  *
- * @static
+ * @func
  * @memberOf R
  * @category object
  * @category relation

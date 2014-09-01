@@ -5,7 +5,7 @@ import _containsWith from "./internal/contains_with";
  * Returns `true` if the `x` is found in the `list`, using `pred` as an
  * equality predicate for `x`.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Function} pred :: x -> x -> Bool
  * @param x the item to find

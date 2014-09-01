@@ -7,7 +7,7 @@ import flip from "./flip";
 /**
  * Finds the set (i.e. no duplicates) of all elements in the first list not contained in the second list.
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Array} list1 The first list.

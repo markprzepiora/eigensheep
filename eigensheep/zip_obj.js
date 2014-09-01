@@ -3,7 +3,7 @@ import curry2 from "./internal/curry2";
 /**
  * Creates a new object out of a list of keys and a list of values.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} keys The array that will be properties on the output object.

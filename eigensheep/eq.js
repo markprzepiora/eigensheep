@@ -2,7 +2,7 @@
  * Tests if two items are equal.  Equality is strict here, meaning reference equality for objects and
  * non-coercing equality for primitives.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {*} a
  * @param {*} b

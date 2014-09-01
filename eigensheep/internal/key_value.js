@@ -6,7 +6,7 @@ import _map from "./map";
  * is the result of applying the supplied function to that item.
  *
  * @private
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Function} fn An arbitrary unary function returning a potential

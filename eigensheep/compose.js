@@ -39,7 +39,7 @@ function internalCompose(f, g) {
  * the function `h` is equivalent to `f( g(x) )`, where `x` represents the arguments
  * originally passed to `h`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {...Function} functions A variable number of functions.

@@ -4,7 +4,7 @@ import clone from "./clone";
  * Returns a new list with the same elements as the original list, just
  * in the reverse order.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The list to reverse.

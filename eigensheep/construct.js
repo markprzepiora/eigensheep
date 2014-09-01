@@ -6,7 +6,7 @@ import constructN from "./construct_n";
  *
  * NOTE: Does not work with some built-in objects such as Date.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} Fn The constructor function to wrap.

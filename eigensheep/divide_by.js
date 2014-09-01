@@ -7,7 +7,7 @@ import divide from "./divide";
  * divided by the first.  The curried version of `divideBy` may prove more useful
  * than that of `divide`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} a The second value.

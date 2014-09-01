@@ -3,7 +3,7 @@ import curry2 from "./internal/curry2";
 /**
  * Determines the largest of a list of items as determined by pairwise comparisons from the supplied comparator
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {Function} keyFn A comparator function for elements in the list

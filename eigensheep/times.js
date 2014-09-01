@@ -7,7 +7,7 @@ import curry2 from "./internal/curry2";
  * `fn` is passed one argument: The current value of `n`, which begins at `0` and is
  * gradually incremented to `n - 1`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to invoke. Passed one argument, the current value of `n`.

@@ -5,7 +5,7 @@ import checkForMethod from "./internal/check_for_method";
 /**
  * Returns a new list containing all but the first `n` elements of the given `list`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {number} n The number of elements of `list` to skip.

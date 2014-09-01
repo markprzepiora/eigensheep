@@ -3,13 +3,12 @@ import NO_ARGS_EXCEPTION from "./internal/no_args_exception";
 /**
  * Returns a function that when supplied an object returns the indicated property of that object, if it exists.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {String} p The property name
  * @param {Object} obj The object to query
  * @return {*} The value at obj.p
- * @alias get
  * @example
  *
  *      prop('x', {x: 100}) // => 100

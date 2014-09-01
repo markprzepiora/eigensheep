@@ -14,7 +14,7 @@ import groupBy from "./group_by";
  * `where` is well suited to declarativley expressing constraints for other functions, e.g.,
  * `filter`, `find`, `pickWith`, etc.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Object} spec

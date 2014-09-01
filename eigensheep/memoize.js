@@ -10,7 +10,7 @@ import _slice from "./internal/slice";
  * Note that this version of `memoize` effectively handles only string and number
  * parameters.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to be wrapped by `memoize`.

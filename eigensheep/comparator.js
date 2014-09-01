@@ -1,7 +1,7 @@
 /**
  * Makes a comparator function out of a function that reports whether the first element is less than the second.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Function} pred A predicate function of arity two.
  * @return {Function} a Function :: a -> b -> Int that returns `-1` if a < b, `1` if b < a, otherwise `0`

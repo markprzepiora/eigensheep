@@ -6,7 +6,7 @@ import isEmpty from "./is_empty";
  * to each possible pair in the lists.
  *
  * @see xprod
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to join pairs with.

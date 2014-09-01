@@ -12,7 +12,7 @@ import curry2 from "./internal/curry2";
 /**
  * Runs the given function with the supplied object, then returns the object.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {*} x
  * @param {Function} fn The function to call with `x`. The return value of `fn` will be thrown away.

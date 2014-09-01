@@ -7,7 +7,7 @@ import _isInteger from "./internal/is_integer";
  * mathMod(-17, 5) is 3. mathMod requires Integer arguments, and returns NaN
  * when the modulus is zero or negative.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} m The dividend.

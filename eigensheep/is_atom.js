@@ -4,7 +4,7 @@ import _isArray from "./internal/is_array";
  * Returns `true` if the argument is an atom; `false` otherwise. An atom is defined as any
  * value that is not an array, `undefined`, or `null`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {*} x The element to consider.

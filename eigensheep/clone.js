@@ -3,7 +3,7 @@ import _slice from "./internal/slice";
 /**
  * Creates a shallow copy of an array.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {Array} list The list to clone.

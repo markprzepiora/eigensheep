@@ -7,7 +7,7 @@ import arity from "./arity";
  * when invoked, calls the original function with all of the values prepended to the
  * original function's arguments list. In some libraries this function is named `applyLeft`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to invoke.

@@ -5,7 +5,7 @@ import _contains from "./internal/contains";
 /**
  * Returns a partial copy of an object omitting the keys specified.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Array} names an array of String propery names to omit from the new object

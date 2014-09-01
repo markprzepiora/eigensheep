@@ -14,7 +14,7 @@ import checkForMethod from "./internal/check_for_method";
  * the native `Array.prototype.reduce` method. For more details on this behavior, see:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce#Description
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The iterator function. Receives two values, the accumulator and the
@@ -22,7 +22,6 @@ import checkForMethod from "./internal/check_for_method";
  * @param {*} acc The accumulator value.
  * @param {Array} list The list to iterate over.
  * @return {*} The final, accumulated value.
- * @alias foldr
  * @example
  *
  *      var pairs = [ ['a', 1], ['b', 2], ['c', 3] ];
@@ -51,7 +50,7 @@ var reduceRight = curry3(checkForMethod('reduceRight', function(fn, acc, list) {
  * see:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce#Description
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The iterator function. Receives four values: the accumulator, the
@@ -59,6 +58,7 @@ var reduceRight = curry3(checkForMethod('reduceRight', function(fn, acc, list) {
  * @param {*} acc The accumulator value.
  * @param {Array} list The list to iterate over.
  * @return {*} The final, accumulated value.
+ * @alias reduceRight.idx
  * @example
  *
  *      var letters = ['a', 'b', 'c'];

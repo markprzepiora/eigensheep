@@ -4,7 +4,7 @@ import _makeFlat from "./internal/make_flat";
  * Returns a new list by pulling every item at the first level of nesting out, and putting
  * them in a new array.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The array to consider.

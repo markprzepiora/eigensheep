@@ -6,7 +6,7 @@ import checkForMethod from "./internal/check_for_method";
  * Returns a new list containing the first `n` elements of the given list.  If
  * `n > * list.length`, returns a list of `list.length` elements.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {number} n The number of elements to return.

@@ -10,7 +10,7 @@ import arity from "./arity";
  *
  * Optionally, you may provide an arity for the returned function.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to curry.

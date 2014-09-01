@@ -11,7 +11,7 @@ import checkForMethod from "./internal/check_for_method";
  * `Array.prototype.filter` method. For more details on this behavior, see:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter#Description
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.
@@ -30,12 +30,13 @@ var filter = curry2(checkForMethod('filter', _filter));
  * Like `filter`, but passes additional parameters to the predicate function. The predicate
  * function is passed three arguments: *(value, index, list)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.
  * @param {Array} list The collection to iterate over.
  * @return {Array} The new filtered array.
+ * @alias filter.idx
  * @example
  *
  *      var lastTwo = function(val, idx, list) {

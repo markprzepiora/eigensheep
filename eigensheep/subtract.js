@@ -3,7 +3,7 @@ import curry2 from "./internal/curry2";
 /**
  * Subtracts two numbers. Equivalent to `a - b` but curried.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} a The first value.

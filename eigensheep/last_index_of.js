@@ -6,7 +6,7 @@ import _lastIndexOf from "./internal/last_index_of";
  * Returns the position of the last occurrence of an item (by strict equality) in
  * an array, or -1 if the item is not included in the array.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param target The item to find.
@@ -28,7 +28,7 @@ var lastIndexOf = curry2(function(target, list) {
  * `lastIndexOf.from` will only search the tail of the array, starting from the
  * `fromIdx` parameter.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param target The item to find.

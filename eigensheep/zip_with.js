@@ -4,7 +4,7 @@ import curry3 from "./internal/curry3";
  * Creates a new list out of the two supplied by applying the function to each
  * equally-positioned pair in the lists.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function used to combine the two elements into one value.

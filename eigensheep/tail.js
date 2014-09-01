@@ -5,13 +5,12 @@ import _slice from "./internal/slice";
  * Returns all but the first element of a list. If the list provided has the `tail` method,
  * it will instead return `list.tail()`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {Array} [arr=[]] The array to consider.
  * @return {Array} A new array containing all but the first element of the input list, or an
  *         empty list if the input list is a falsy value (e.g. `undefined`).
- * @alias cdr
  * @example
  *
  *      ramda.tail(['fi', 'fo', 'fum']); //=> ['fo', 'fum']

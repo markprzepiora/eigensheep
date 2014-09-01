@@ -6,7 +6,7 @@ import curry2 from "./internal/curry2";
  * this is short-circuited, meaning that the second function will not be invoked if the first returns a false-y
  * value.
  *
- * @static
+ * @func
  * @memberOf R
  * @category logic
  * @param {Function} f a predicate

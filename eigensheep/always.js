@@ -1,7 +1,7 @@
 /**
  * Returns a function that always returns the given value.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {*} val The value to wrap in a function

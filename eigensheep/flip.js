@@ -6,7 +6,7 @@ import _concat from "./internal/concat";
  * Returns a new function much like the supplied one, except that the first two arguments'
  * order is reversed.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to invoke with its first two parameters reversed.

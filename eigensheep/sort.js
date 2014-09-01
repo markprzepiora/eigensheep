@@ -6,7 +6,7 @@ import curry2 from "./internal/curry2";
  * time and return a negative number if the first value is smaller, a positive number if it's larger, and zero
  * if they are equal.  Please note that this is a **copy** of the list.  It does not modify the original.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Function} comparator A sorting function :: a -> b -> Int
  * @param {Array} list The list to sort

@@ -13,7 +13,7 @@ import curry2 from "./internal/curry2";
  * Also note that, unlike `Array.prototype.forEach`, Ramda's `forEach` returns the original
  * array. In some libraries this function is named `forEach`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to invoke. Receives one argument, `value`.
@@ -50,7 +50,7 @@ var forEach = curry2(function(fn, list) {
  * Also note that, unlike `Array.prototype.forEach`, Ramda's `forEach` returns the original
  * array. In some libraries this function is named `each`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to invoke. Receives three arguments:

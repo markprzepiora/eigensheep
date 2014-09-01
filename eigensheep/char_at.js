@@ -3,7 +3,7 @@ import invoker from "./invoker";
 /**
  * The character at the nth position in a String:
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {Number} index An integer between 0 and the length of the string.

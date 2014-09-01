@@ -5,7 +5,7 @@ import prop from "./prop";
 /**
  * Returns a new list by plucking the same named property off all objects in the list supplied.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {string|number} key The key name to pluck off of each object.

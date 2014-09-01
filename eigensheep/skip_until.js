@@ -7,7 +7,7 @@ import _slice from "./internal/slice";
  * `true`. Excludes the element that caused the predicate function to fail. The predicate
  * function is passed one argument: *(value)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.

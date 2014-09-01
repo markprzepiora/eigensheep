@@ -10,7 +10,7 @@ import containsWith from "./contains_with";
  * Duplication is determined according to the value returned by applying the supplied predicate to two list
  * elements.
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Function} pred

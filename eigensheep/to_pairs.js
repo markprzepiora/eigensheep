@@ -7,7 +7,7 @@ import pairWith from "./internal/pair_with";
  * Note that the order of the output array is not guaranteed to be
  * consistent across different JS platforms.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Object} obj The object to extract from

@@ -7,7 +7,7 @@ import curry2 from "./internal/curry2";
  * Similar to `filter`, except that it keeps only values for which the given predicate
  * function returns falsy. The predicate function is passed one argument: *(value)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.
@@ -26,12 +26,13 @@ var reject = curry2(_reject);
  * Like `reject`, but passes additional parameters to the predicate function. The predicate
  * function is passed three arguments: *(value, index, list)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.
  * @param {Array} list The collection to iterate over.
  * @return {Array} The new filtered array.
+ * @alias reject.idx
  * @example
  *
  *      var lastTwo = function(val, idx, list) {

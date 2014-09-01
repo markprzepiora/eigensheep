@@ -4,7 +4,7 @@ import nAry from "./n_ary";
  * Wraps a function of any arity (including nullary) in a function that accepts exactly 2
  * parameters. Any extraneous parameters will not be passed to the supplied function.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to wrap.

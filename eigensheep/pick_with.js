@@ -5,7 +5,7 @@ import curry2 from "./internal/curry2";
  * Returns a partial copy of an object containing only the keys that
  * satisfy the supplied predicate.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Function} pred A predicate to determine whether or not a key

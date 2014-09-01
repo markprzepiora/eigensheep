@@ -4,7 +4,7 @@ import curry2 from "./internal/curry2";
  * See if an object (`val`) is an instance of the supplied constructor.
  * This function will check up the inheritance chain, if any.
  *
- * @static
+ * @func
  * @memberOf R
  * @category type
  * @param {Object} ctor A constructor

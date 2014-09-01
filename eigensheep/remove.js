@@ -8,7 +8,7 @@ import _slice from "./internal/slice";
  * copy of the list with the changes.
  * <small>No lists have been harmed in the application of this function.</small>
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Number} start The position to start removing elements
  * @param {Number} count The number of elements to remove

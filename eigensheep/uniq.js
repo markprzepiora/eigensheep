@@ -5,7 +5,7 @@ import _contains from "./internal/contains";
  * Equality is strict here, meaning reference equality for objects and non-coercing equality
  * for primitives.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The array to consider.

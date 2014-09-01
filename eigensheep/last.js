@@ -1,7 +1,7 @@
 /**
  * Returns the last element from a list.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {Array} [arr=[]] The array to consider.

@@ -7,7 +7,7 @@ import curry2 from "./internal/curry2";
 /**
  * Combines two lists into a set (i.e. no duplicates) composed of those elements common to both lists.
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Array} list1 The first list.

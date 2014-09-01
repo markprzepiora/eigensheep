@@ -11,7 +11,7 @@ import compose from "./compose";
  *
  * In some libraries this function is named `sequence`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {...Function} functions A variable number of functions.

@@ -5,7 +5,7 @@ import curry2 from "./internal/curry2";
  * (exclusive). In mathematical terms, `range(a, b)` is equivalent to
  * the half-open interval `[a, b)`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {number} from The first number in the list.

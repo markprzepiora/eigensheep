@@ -9,7 +9,7 @@ import _keyValue from "./internal/key_value";
  * the list. Note that all keys are coerced to strings because of how
  * JavaScript objects work.
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {Function} fn The function used to map values to keys.

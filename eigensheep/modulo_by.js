@@ -5,7 +5,7 @@ import modulo from "./modulo";
  * Reversed version of `modulo`, where the second parameter is divided by the first.  The curried version of
  * this one might be more useful than that of `modulo`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} m The dividend.

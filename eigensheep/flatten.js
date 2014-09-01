@@ -4,7 +4,7 @@ import _makeFlat from "./internal/make_flat";
  * Returns a new list by pulling every item out of it (and all its sub-arrays) and putting
  * them in a new array, depth-first.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The array to consider.

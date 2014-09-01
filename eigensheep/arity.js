@@ -5,7 +5,7 @@ import mkArgStr from "./internal/mk_arg_str";
  * parameters. Unlike `nAry`, which passes only `n` arguments to the wrapped function,
  * functions produced by `arity` will pass all provided arguments to the wrapped function.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {number} n The desired arity of the returned function.

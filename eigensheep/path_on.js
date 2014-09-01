@@ -5,7 +5,7 @@ import curry3 from "./internal/curry3";
  * Retrieve a nested path on an object seperated by the specified
  * separator value.
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {string} sep The separator to use in `path`.

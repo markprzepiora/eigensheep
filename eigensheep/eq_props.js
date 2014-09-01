@@ -3,7 +3,7 @@ import curry3 from "./internal/curry3";
 /**
  * Reports whether two functions have the same value for the specified property.  Useful as a curried predicate.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {String} prop The name of the property to compare

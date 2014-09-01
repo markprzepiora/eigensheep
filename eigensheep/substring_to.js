@@ -3,7 +3,7 @@ import substring from "./substring";
 /**
  * The leading substring of a String ending at the nth character:
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {Number} indexA An integer between 0 and the length of the string.

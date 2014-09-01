@@ -4,7 +4,7 @@ import _indexOf from "./internal/index_of";
  * Returns `true` if all elements are unique, otherwise `false`.
  * Uniquness is determined using strict equality (`===`).
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The array to consider.

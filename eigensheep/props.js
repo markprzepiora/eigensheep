@@ -5,7 +5,7 @@ import flip from "./flip";
  * Returns the value at the specified property.
  * The only difference from `prop` is the parameter order.
  *
- * @static
+ * @func
  * @memberOf R
  * @see prop
  * @category Object

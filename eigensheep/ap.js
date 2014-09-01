@@ -7,7 +7,7 @@ import checkForMethod from "./internal/check_for_method";
 /**
  * ap applies a list of functions to a list of values.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Array} fns An array of functions

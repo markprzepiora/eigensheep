@@ -4,7 +4,7 @@ import curry2 from "./internal/curry2";
  * Creates a new list out of the two supplied by pairing up equally-positioned items from
  * both lists. Note: `zip` is equivalent to `zipWith(function(a, b) { return [a, b] })`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list1 The first array to consider.

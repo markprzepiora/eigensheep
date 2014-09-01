@@ -6,7 +6,7 @@ import curry3 from "./internal/curry3";
  * returns the value of that property.
  * Otherwise returns the provided default value.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {String} p The name of the property to return.

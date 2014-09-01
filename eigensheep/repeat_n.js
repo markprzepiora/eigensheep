@@ -5,7 +5,7 @@ import always from "./always";
 /**
  * Returns a fixed list of size `n` containing a specified identical value.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {*} value The value to repeat.

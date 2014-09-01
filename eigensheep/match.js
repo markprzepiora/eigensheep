@@ -3,7 +3,7 @@ import invoker from "./invoker";
 /**
  * Tests a regular expression agains a String
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {RegExp} rx A regular expression.

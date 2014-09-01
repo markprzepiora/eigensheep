@@ -5,7 +5,7 @@ import curry3 from "./internal/curry3";
  * value according to strict equality (`===`).  Most likely used to
  * filter a list:
  *
- * @static
+ * @func
  * @memberOf R
  * @category relation
  * @param {string|number} name The property name (or index) to use.

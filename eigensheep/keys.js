@@ -15,7 +15,7 @@ var nativeKeys = Object.keys;
  * Note that the order of the output array is not guaranteed to be
  * consistent across different JS platforms.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Object} obj The object to extract properties from

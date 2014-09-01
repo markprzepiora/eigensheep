@@ -3,7 +3,7 @@ import always from "./always";
 /**
  * A function that always returns `true`. Any passed in parameters are ignored.
  *
- * @static
+ * @func
  * @memberOf R
  * @category function
  * @see always

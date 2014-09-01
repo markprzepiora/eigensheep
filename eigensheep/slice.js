@@ -4,7 +4,7 @@ import flip from "./flip";
 /**
  * Returns the elements from `xs` starting at `a` and ending at `b - 1`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {number} a The starting index.
@@ -21,7 +21,7 @@ var slice = invoker('slice', Array.prototype);
 /**
  * Returns the elements from `xs` starting at `a` going to the end of `xs`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {number} a The starting index.

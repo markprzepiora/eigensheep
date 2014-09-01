@@ -4,7 +4,7 @@ import _not from "./internal/not";
  * A function wrapping a call to the given function in a `!` operation.  It will return `true` when the
  * underlying function would return a false-y value, and `false` when it would return a truth-y one.
  *
- * @static
+ * @func
  * @memberOf R
  * @category logic
  * @param {Function} f a predicate

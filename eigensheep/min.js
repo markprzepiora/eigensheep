@@ -4,7 +4,7 @@ import binary from "./binary";
 /**
  * Determines the smallest of a list of numbers (or elements that can be cast to numbers)
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {Array} list A list of numbers

@@ -4,7 +4,7 @@ import invoker from "./invoker";
  * Returns a string made by inserting the `separator` between each
  * element and concatenating all the elements into a single string.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {string|number} separator The string used to separate the elements.

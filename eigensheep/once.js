@@ -3,7 +3,7 @@
  * `fn` can only ever be called once, no matter how many times the returned function is
  * invoked.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to wrap in a call-only-once wrapper.

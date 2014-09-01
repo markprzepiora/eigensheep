@@ -4,7 +4,7 @@ import _pickAll from "./internal/pick_all";
 /**
  * Similar to `pick` except that this one includes a `key: undefined` pair for properties that don't exist.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Array} names an array of String propery names to copy onto a new object

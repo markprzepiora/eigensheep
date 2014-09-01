@@ -5,7 +5,7 @@ import foldl from "./foldl";
  * Takes a predicate and a list and returns the pair of lists of
  * elements which do and do not satisfy the predicate, respectively.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Function} pred Function :: a -> Boolean
  * @param {Array} list The array to partition

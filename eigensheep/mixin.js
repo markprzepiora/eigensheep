@@ -6,7 +6,7 @@ import curry2 from "./internal/curry2";
  * merged with the own properties of object b.
  * This function will *not* mutate passed-in objects.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {Object} a source object

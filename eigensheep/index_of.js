@@ -7,7 +7,7 @@ import _indexOf from "./internal/index_of";
  * (by strict equality),
  * or -1 if the item is not included in the array.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param target The item to find.
@@ -29,7 +29,7 @@ var indexOf = curry2(function(target, list) {
  * `indexOf.from` will only search the tail of the array, starting from the
  * `fromIdx` parameter.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param target The item to find.

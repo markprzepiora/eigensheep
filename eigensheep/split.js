@@ -4,7 +4,7 @@ import invoker from "./invoker";
  * Splits a string into an array of strings based on the given
  * separator.
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {string} sep The separator string.

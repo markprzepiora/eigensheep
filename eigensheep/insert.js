@@ -8,7 +8,7 @@ import append from "./append";
  * that this is not destructive_: it returns a copy of the list with the changes.
  * <small>No lists have been harmed in the application of this function.</small>
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Number} index The position to insert the element
  * @param elt The element to insert into the Array
@@ -28,7 +28,7 @@ var insert = curry3(function _insert(index, elt, list) {
  * is not destructive_: it returns a copy of the list with the changes.
  * <small>No lists have been harmed in the application of this function.</small>
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Number} index The position to insert the sublist
  * @param {Array} elts The sub-list to insert into the Array

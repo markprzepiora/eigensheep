@@ -10,7 +10,7 @@ import checkForMethod from "./internal/check_for_method";
  * native `Array.prototype.map` method. For more details on this behavior, see:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Description
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to be called on every element of the input `list`.
@@ -35,12 +35,13 @@ var map = curry2(checkForMethod('map', _map));
  * the native `Array.prototype.map` method. For more details on this behavior, see:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Description
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function to be called on every element of the input `list`.
  * @param {Array} list The list to be iterated over.
  * @return {Array} The new list.
+ * @alias map.idx
  * @example
  *
  *      var squareEnds = function(elt, idx, list) {

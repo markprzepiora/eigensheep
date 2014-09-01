@@ -3,7 +3,7 @@ import curry2 from "./internal/curry2";
 /**
  * Adds two numbers (or strings). Equivalent to `a + b` but curried.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number|string} a The first value.

@@ -8,7 +8,7 @@ import curry from "./curry";
  * The returned function is curried and accepts `len + 1` parameters (or `method.length + 1`
  * when `len` is not specified), and the final parameter is the target object.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {string} name The name of the method to wrap.

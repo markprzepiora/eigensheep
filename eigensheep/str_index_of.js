@@ -3,7 +3,7 @@ import invoker from "./invoker";
 /**
  * Finds the first index of a substring in a string, returning -1 if it's not present
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {String} c A string to find.

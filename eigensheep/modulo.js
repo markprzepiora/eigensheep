@@ -6,7 +6,7 @@ import curry2 from "./internal/curry2";
  * Note that this functions preserves the JavaScript-style behavior for
  * modulo. For mathematical modulo see `mathMod`
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {number} a The value to the divide.

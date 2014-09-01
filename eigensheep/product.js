@@ -4,7 +4,7 @@ import multiply from "./multiply";
 /**
  * Multiplies together all the elements of a list.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {Array} list An array of numbers

@@ -10,7 +10,7 @@ import arity from "./arity";
  * Note that `rPartial` is the opposite of `lPartial`: `rPartial` fills `fn`'s arguments
  * from the right to the left. In some libraries this function is named `applyRight`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} fn The function to invoke.

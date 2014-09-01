@@ -3,7 +3,7 @@ import curry2 from "./internal/curry2";
 /**
  * Returns true if the first parameter is less than or equal to the second.
  *
- * @static
+ * @func
  * @memberOf R
  * @category math
  * @param {Number} a

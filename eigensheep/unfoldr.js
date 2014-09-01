@@ -7,7 +7,7 @@ import curry2 from "./internal/curry2";
  *
  * The iterator function receives one argument: *(seed)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The iterator function. receives one argument, `seed`, and returns

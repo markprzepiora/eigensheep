@@ -13,7 +13,7 @@ import _map from "./internal/map";
  *   h(1, 2); //≅ e( f(1, 2), g(1, 2) )
  * ```
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {Function} after A function. `after` will be invoked with the return values of

@@ -5,7 +5,7 @@ import curry2 from "./internal/curry2";
  * Returns `true` if at least one of elements of the list match the predicate, `false`
  * otherwise.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The predicate function.

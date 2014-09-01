@@ -5,7 +5,7 @@ import _contains from "./internal/contains";
  * Returns `true` if the specified item is somewhere in the list, `false` otherwise.
  * Equivalent to `indexOf(a)(list) > -1`. Uses strict (`===`) equality checking.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Object} a The item to compare against.

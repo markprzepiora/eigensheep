@@ -8,7 +8,7 @@ import curry2 from "./internal/curry2";
  * `false`. Excludes the element that caused the predicate function to fail. The predicate
  * function is passed one argument: *(value)*.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The function called per iteration.

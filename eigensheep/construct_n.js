@@ -8,7 +8,7 @@ import nAry from "./n_ary";
  *
  * NOTE: Does not work with some built-in objects such as Date.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param {number} n The arity of the constructor function.

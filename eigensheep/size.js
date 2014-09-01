@@ -1,12 +1,11 @@
 /**
  * Returns the number of elements in the array by returning `arr.length`.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} arr The array to inspect.
  * @return {number} The size of the array.
- * @alias length
  * @example
  *
  *      ramda.size([]); //=> 0

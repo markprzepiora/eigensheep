@@ -6,7 +6,7 @@ import _containsWith from "./internal/contains_with";
  * upon the value returned by applying the supplied predicate to two list elements. Prefers
  * the first item if two items compare equal based on the predicate.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Array} list The array to consider.

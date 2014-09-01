@@ -1,7 +1,7 @@
 /**
  * Reports whether an array is empty.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {Array} arr The array to consider.

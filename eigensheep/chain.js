@@ -8,7 +8,7 @@ import unnest from "./unnest";
  * This implementation is compatible with the
  * Fantasy-land Chain spec, and will work with types that implement that spec.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function}

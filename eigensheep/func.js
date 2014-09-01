@@ -6,7 +6,7 @@ import _slice from "./internal/slice";
  * after `fn` and `obj` are passed in to `fn`. If no additional arguments are passed to `func`,
  * `fn` is invoked with no arguments.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Object
  * @param {String} fn The name of the property mapped to the function to invoke

@@ -4,7 +4,7 @@ import curry2 from "./internal/curry2";
  * Returns the last element of the list which matches the predicate, or `undefined` if no
  * element matches.
  *
- * @static
+ * @func
  * @memberOf R
  * @category List
  * @param {Function} fn The predicate function used to determine if the element is the

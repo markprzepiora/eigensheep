@@ -7,7 +7,7 @@ import _hasMethod from "./internal/has_method";
  * Note this `of` is different from the ES6 `of`; See
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of
  *
- * @static
+ * @func
  * @memberOf R
  * @category Function
  * @param x any value

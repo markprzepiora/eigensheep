@@ -6,7 +6,7 @@ import append from "./append";
  * Splits a list into sublists stored in an object, based on the result of calling a String-returning function
  * on each element, and grouping the results according to values returned.
  *
- * @static
+ * @func
  * @memberOf R
  * @param {Function} fn Function :: a -> String
  * @param {Array} list The array to group

@@ -3,7 +3,7 @@ import invoker from "./invoker";
 /**
  * The upper case version of a string.
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {string} str The string to upper case.

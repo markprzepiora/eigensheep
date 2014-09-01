@@ -3,7 +3,7 @@ import invoker from "./invoker";
 /**
  * returns a subset of a string between one index and another.
  *
- * @static
+ * @func
  * @memberOf R
  * @category string
  * @param {Number} indexA An integer between 0 and the length of the string.

@@ -4,7 +4,7 @@ import _predicateWrap from "./internal/predicate_wrap";
 /**
  * Given a list of predicates returns a new predicate that will be true exactly when all of them are.
  *
- * @static
+ * @func
  * @memberOf R
  * @category logic
  * @param {Array} list An array of predicate functions

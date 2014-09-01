@@ -8,7 +8,7 @@ import is from "./is";
  * Returns a new list consisting of the elements of the first list followed by the elements
  * of the second.
  *
- * @static
+ * @func
  * @memberOf R
  * @category Array
  * @param {Array} list1 The first list to merge.
