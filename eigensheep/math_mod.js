@@ -24,8 +24,8 @@ import _isInteger from "./internal/is_integer";
  *      mathMod(17, 5.3) // NaN
  */
 var mathMod = curry2(function _mathMod(m, p) {
-    if (!_isInteger(m) || m < 1) { return NaN; }
-    if (!_isInteger(p)) { return NaN; }
+    if (!_isInteger(m)) { return NaN; }
+    if (!_isInteger(p) || p < 1) { return NaN; }
     return ((m % p) + p) % p;
 });
 

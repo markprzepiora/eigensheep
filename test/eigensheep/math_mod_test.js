@@ -12,10 +12,10 @@
   });
 
   test("acts correctly for negative numbers too", function() {
-    strictEqual(mathMod(-17, 5), 3);
-    strictEqual(mathMod(17, -5), NaN);
-    strictEqual(mathMod(17, 0), NaN);
-    strictEqual(mathMod(17.2, 5), NaN);
-    strictEqual(mathMod(17, 5.5), NaN);
+    deepEqual(mathMod(-17, 5), 3);
+    deepEqual(mathMod(17, -5), Number.NaN);
+    deepEqual(mathMod(17, 0), Number.NaN);
+    deepEqual(mathMod(17.2, 5), Number.NaN);
+    deepEqual(mathMod(17, 5.5), Number.NaN);
   });
 })();
