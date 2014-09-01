@@ -18,11 +18,14 @@ import NO_ARGS_EXCEPTION from "./no_args_exception";
 function curry2(fn) {
     return function(a, b) {
         switch (arguments.length) {
-            case 0: throw NO_ARGS_EXCEPTION;
-            case 1: return function(b) {
+            case 0:
+                throw NO_ARGS_EXCEPTION;
+            case 1:
+                return function(b) {
+                    return fn(a, b);
+                };
+            default:
                 return fn(a, b);
-            };
-            default: return fn(a, b);
         }
     };
 }

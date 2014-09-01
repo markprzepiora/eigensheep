@@ -33,8 +33,8 @@ import _slice from "./internal/slice";
  */
 export default function memoize(fn) {
     var cache = {};
-    return function () {
-        var position = foldl(function (cache, arg) {
+    return function() {
+        var position = foldl(function(cache, arg) {
                 return cache[arg] || (cache[arg] = {});
             }, cache,
             _slice(arguments, 0, arguments.length - 1));

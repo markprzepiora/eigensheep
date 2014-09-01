@@ -24,25 +24,25 @@ import mkArgStr from "./internal/mk_arg_str";
  *      // Only `n` arguments are passed to the wrapped function
  *      takesOneArg(1, 2); //=> [1, undefined]
  */
-var nAry = (function () {
+var nAry = (function() {
     var cache = {
-        0: function (func) {
-            return function () {
+        0: function(func) {
+            return function() {
                 return func.call(this);
             };
         },
-        1: function (func) {
-            return function (arg0) {
+        1: function(func) {
+            return function(arg0) {
                 return func.call(this, arg0);
             };
         },
-        2: function (func) {
-            return function (arg0, arg1) {
+        2: function(func) {
+            return function(arg0, arg1) {
                 return func.call(this, arg0, arg1);
             };
         },
-        3: function (func) {
-            return function (arg0, arg1, arg2) {
+        3: function(func) {
+            return function(arg0, arg1, arg2) {
                 return func.call(this, arg0, arg1, arg2);
             };
         }
@@ -56,11 +56,11 @@ var nAry = (function () {
     //         }
     //     };
 
-    var makeN = function (n) {
+    var makeN = function(n) {
         var fnArgs = mkArgStr(n);
         var body = [
-                '    return function(' + fnArgs + ') {',
-                '        return func.call(this' + (fnArgs ? ', ' + fnArgs : '') + ');',
+            '    return function(' + fnArgs + ') {',
+            '        return func.call(this' + (fnArgs ? ', ' + fnArgs : '') + ');',
             '    }'
         ].join('\n');
         return new Function('func', body);

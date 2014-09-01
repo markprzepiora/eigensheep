@@ -26,7 +26,7 @@ import keys from "./keys";
  */
 // TODO: consider mapObj.key in parallel with mapObj.idx.  Also consider folding together with `map` implementation.
 var mapObj = curry2(function _mapObject(fn, obj) {
-    return foldl(function (acc, key) {
+    return foldl(function(acc, key) {
         acc[key] = fn(obj[key]);
         return acc;
     }, {}, keys(obj));
@@ -54,7 +54,7 @@ var mapObj = curry2(function _mapObject(fn, obj) {
  *      ramda.mapObj(double, values); //=> { x: 'x2', y: 'y4', z: 'z6' }
  */
 mapObj.idx = curry2(function mapObjectIdx(fn, obj) {
-    return foldl(function (acc, key) {
+    return foldl(function(acc, key) {
         acc[key] = fn(obj[key], key, obj);
         return acc;
     }, {}, keys(obj));

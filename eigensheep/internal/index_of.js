@@ -18,7 +18,9 @@ export default function indexOf(array, item, from) {
         i = from < 0 ? Math.max(0, length + from) : from;
     }
     for (; i < length; i++) {
-        if (array[i] === item) return i;
+        if (array[i] === item) {
+            return i;
+        }
     }
     return -1;
 };

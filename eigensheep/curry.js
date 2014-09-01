@@ -30,13 +30,12 @@ import arity from "./arity";
 function curry(fn, fnArity) {
     fnArity = typeof fnArity === 'number' ? fnArity : fn.length;
     function recurry(args) {
-        return arity(Math.max(fnArity - (args && args.length || 0), 0), function () {
+        return arity(Math.max(fnArity - (args && args.length || 0), 0), function() {
             if (arguments.length === 0) { throw NO_ARGS_EXCEPTION; }
             var newArgs = _concat(args, arguments);
             if (newArgs.length >= fnArity) {
                 return fn.apply(this, newArgs);
-            }
-            else {
+            } else {
                 return recurry(newArgs);
             }
         });

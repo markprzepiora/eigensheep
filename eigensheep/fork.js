@@ -37,9 +37,9 @@ import _map from "./internal/map";
  */
 export default function fork(after) {
     var fns = _slice(arguments, 1);
-    return function () {
+    return function() {
         var args = arguments;
-        return after.apply(this, _map(function (fn) {
+        return after.apply(this, _map(function(fn) {
             return fn.apply(this, args);
         }, fns));
     };

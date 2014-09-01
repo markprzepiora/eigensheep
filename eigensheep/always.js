@@ -12,7 +12,7 @@
  *      t(); // => 'Tee'
  */
 export default function always(val) {
-    return function () {
+    return function() {
         return val;
     };
 };

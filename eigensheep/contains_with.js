@@ -11,7 +11,8 @@ import _containsWith from "./internal/contains_with";
  * @param x the item to find
  * @param {Array} list the list to iterate over
  * @return {Boolean} `true` if `x` is in `list`, else `false`
- */ //TODO: add an example
+ */
+// TODO: add an example
 
 var containsWith = curry3(_containsWith);
 

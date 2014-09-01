@@ -29,7 +29,7 @@ import arity from "./arity";
  */
 export default function lPartial(fn /*, args */) {
     var args = _slice(arguments, 1);
-    return arity(Math.max(fn.length - args.length, 0), function () {
+    return arity(Math.max(fn.length - args.length, 0), function() {
         return fn.apply(this, _concat(args, arguments));
     });
 };

@@ -57,7 +57,7 @@ import arity from "./arity";
 export default function useWith(fn /*, transformers */) {
     var transformers = _slice(arguments, 1);
     var tlen = transformers.length;
-    return curry(arity(tlen, function () {
+    return curry(arity(tlen, function() {
         var args = [], idx = -1;
         while (++idx < tlen) {
             args.push(transformers[idx](arguments[idx]));

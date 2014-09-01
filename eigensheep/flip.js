@@ -23,7 +23,7 @@ import _concat from "./internal/concat";
  *      ramda.flip([1, 2, 3]); //=> [2, 1, 3]
  */
 export default function flip(fn) {
-    return function (a, b) {
+    return function(a, b) {
         switch (arguments.length) {
             case 0: throw NO_ARGS_EXCEPTION;
             case 1: return function(b) { return fn.apply(this, [b, a].concat(_slice(arguments, 1))); };

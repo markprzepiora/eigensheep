@@ -24,10 +24,15 @@ import is from "./is";
  *      ramda.concat('ABC', 'DEF'); // 'ABCDEF'
  */
 var concat = curry2(function(set1, set2) {
-    if (isArray(set2)) { return _concat(set1, set2); }
-    else if (is(String, set1)) { return set1.concat(set2); }
-    else if (hasMethod('concat', set2)) { return set2.concat(set1); }
-    else { throw new TypeError("can't concat " + typeof set2); }
+    if (isArray(set2)) {
+        return _concat(set1, set2);
+    } else if (is(String, set1)) {
+        return set1.concat(set2);
+    } else if (hasMethod('concat', set2)) {
+        return set2.concat(set1);
+    } else {
+        throw new TypeError("can't concat " + typeof set2);
+    }
 });
 
 export default concat;

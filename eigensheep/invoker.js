@@ -28,7 +28,7 @@ import curry from "./curry";
 export default function _invoker(name, obj, len) {
     var method = obj[name];
     var length = len === void 0 ? method.length : len;
-    return method && curry(function () {
+    return method && curry(function() {
         if (arguments.length) {
             var target = Array.prototype.pop.call(arguments);
             var targetMethod = target[name];

@@ -18,7 +18,9 @@ export default function _lastIndexOf(array, item, from) {
         idx = from < 0 ? idx + from + 1 : Math.min(idx, from + 1);
     }
     while (--idx >= 0) {
-        if (array[idx] === item) return idx;
+        if (array[idx] === item) {
+            return idx;
+        }
     }
     return -1;
 };

@@ -35,9 +35,8 @@ import groupBy from "./group_by";
  */
 export default function where(spec, testObj) {
     var parsedSpec = groupBy(function(key) {
-            return typeof spec[key] === 'function' ? 'fn' : 'obj';
-        }, keys(spec)
-    );
+        return typeof spec[key] === 'function' ? 'fn' : 'obj';
+    }, keys(spec));
     switch (arguments.length) {
         case 0: throw NO_ARGS_EXCEPTION;
         case 1:

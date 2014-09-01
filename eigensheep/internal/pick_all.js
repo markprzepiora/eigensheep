@@ -10,7 +10,7 @@ import forEach from "../for_each";
 // TODO: document, even for internals...
 export default function _pickAll(names, obj) {
     var copy = {};
-    forEach(function (name) {
+    forEach(function(name) {
         copy[name] = obj[name];
     }, names);
     return copy;

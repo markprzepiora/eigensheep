@@ -17,7 +17,7 @@ import foldl from "./foldl";
  *     // => [ [ 'sss', 'bars' ],  [ 'ttt', 'foo' ] ]
  */
 var partition = curry2(function _partition(pred, list) {
-    return foldl(function (acc, elt) {
+    return foldl(function(acc, elt) {
         acc[pred(elt) ? 0 : 1].push(elt);
         return acc;
     }, [[], []], list);

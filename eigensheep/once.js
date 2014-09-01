@@ -17,7 +17,7 @@
  */
 export default function once(fn) {
     var called = false, result;
-    return function () {
+    return function() {
         if (called) {
             return result;
         }

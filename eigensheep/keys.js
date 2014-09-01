@@ -25,7 +25,9 @@ var nativeKeys = Object.keys;
  *      keys({a: 1, b: 2, c: 3}) // => ['a', 'b', 'c']
  */
 var keys = function _keys(obj) {
-    if (nativeKeys) return nativeKeys(Object(obj));
+    if (nativeKeys) {
+        return nativeKeys(Object(obj));
+    }
     var prop, ks = [];
     for (prop in obj) {
         if (hasOwnProperty.call(obj, prop)) {

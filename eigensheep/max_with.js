@@ -18,7 +18,7 @@ import curry2 from "./internal/curry2";
  */
 var maxWith = curry2(function _maxWith(keyFn, list) {
     if (!(list && list.length > 0)) {
-       return;
+        return;
     }
     var idx = 0, winner = list[idx], max = keyFn(winner), testKey;
     while (++idx < list.length) {
