@@ -30,7 +30,6 @@ import difference from "./difference";
 import differenceWith from "./difference_with";
 import divide from "./divide";
 import divideBy from "./divide_by";
-import each from "./each";
 import empty from "./empty";
 import eq from "./eq";
 import eqProps from "./eq_props";
@@ -197,7 +196,6 @@ var R = {
     differenceWith: differenceWith,
     divide: divide,
     divideBy: divideBy,
-    each: each,
     empty: empty,
     eq: eq,
     eqProps: eqProps,

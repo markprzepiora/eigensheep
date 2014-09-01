@@ -1,5 +1,5 @@
 // TODO: Are we okay with internal functions depending on exported functions?
-import each from "../each";
+import forEach from "../for_each";
 
 /**
  * Internal implementation of `pickAll`
@@ -10,7 +10,7 @@ import each from "../each";
 // TODO: document, even for internals...
 export default function _pickAll(names, obj) {
     var copy = {};
-    each(function (name) {
+    forEach(function (name) {
         copy[name] = obj[name];
     }, names);
     return copy;

@@ -1,7 +1,7 @@
 (function() {
-  module("R.each.idx");
+  module("R.forEach.idx");
 
-  var each = require('eigensheep/each')['default'];
+  var forEach = require('eigensheep/for_each')['default'];
 
   test("it executes the callback for each element, also passing in the index and list", function() {
     expect(9);
@@ -15,6 +15,6 @@
 
     var array = [1, 2, 3];
 
-    each.idx(callback, array);
+    forEach.idx(callback, array);
   });
 })();
