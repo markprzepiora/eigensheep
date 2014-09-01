@@ -49,10 +49,10 @@ amdLoaderBuild = es6(amdLoaderBuild, {
   outputFile: '/assets/eigensheep.amd.loader.js',
   legacyFilesToAppend: []
 });
-// amdLoaderBuild = mergeTrees(['public', bowerTree, amdLoaderBuild]);
-// amdLoaderBuild = mergeTrees(['public', bowerTree, amdLoaderBuild]);
+var amdLoaderMinBuild = uglifiedBuild(amdLoaderBuild, '/assets/eigensheep.amd.loader.js');
 
-var combinedTree = mergeTrees([amdBuild, amdMinBuild, globalBuild, globalMinBuild, amdLoaderBuild]);
+var combinedTree = mergeTrees(
+  [amdBuild, amdMinBuild, globalBuild, globalMinBuild, amdLoaderBuild, amdLoaderMinBuild]);
 
 var exportTree = exportTree(combinedTree, {
   destDir: 'dist'
