@@ -1,5 +1,4 @@
 import add from "./add";
-import all from "./all";
 import allPredicates from "./all_predicates";
 import always from "./always";
 import alwaysFalse from "./always_false";
@@ -167,7 +166,6 @@ import zipWith from "./zip_with";
 
 var R = {
     add: add,
-    all: all,
     allPredicates: allPredicates,
     always: always,
     alwaysFalse: alwaysFalse,
