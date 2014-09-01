@@ -12,7 +12,7 @@ using ES6 modules.
 
 ## Is it good?
 
-Not yet. But we're getting there!
+Getting better all the time.
 
 
 ## Building and running tests
@@ -31,10 +31,18 @@ $ testem -l phantomjs
 
 Tests will be run live as any production code or test code changes.
 
+## Status
+
+Eigensheep is now a drop-in replacement for Ramda.js. The Ramda.js test suite
+passes in full. Yay!
+
+
 ## TODO
 
 - ~~Add remaining Ramda.js functions (have ~179/162 so far)~~
-- Merge changes from Ramda.js repo since the last few days
+- ~~Merge changes from Ramda.js repo since the last few days~~
+- Merge my bug fixes into Ramda.js master
+- Replace my ad-hoc test suite with real Ramda.js test suite
 - Add missing functions (isEqual from underscore/lodash!!)
 - Categorize functions (list functions, object functions, alises, etc.)
 - Create a custom builder
