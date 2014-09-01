@@ -9,7 +9,6 @@ import _makeFlat from "./internal/make_flat";
  * @category List
  * @param {Array} list The array to consider.
  * @return {Array} The flattened list.
- * @alias flattenDeep
  * @example
  *
  * flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
