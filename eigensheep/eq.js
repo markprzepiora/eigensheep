@@ -1,3 +1,5 @@
+import curry2 from "./internal/curry2";
+
 /**
  * Tests if two items are equal.  Equality is strict here, meaning reference equality for objects and
  * non-coercing equality for primitives.
@@ -15,6 +17,6 @@
  *      eq(1, 1) // => true
  *      eq(1, '1') // => false
  */
-export default function eq(a, b) {
-    return arguments.length < 2 ? function _eq(b) { return a === b; } : a === b;
-};
+var eq = curry2(function _eq(a, b) { return a === b; });
+
+export default eq;
