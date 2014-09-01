@@ -14,7 +14,7 @@ import _concat from "./internal/concat";
  * @param {Array} list2 The second list.
  * @return {Array} The first and second lists concatenated, with
  *         duplicates removed.
- * @see union
+ * @see R.union
  * @example
  *
  *      function cmp(x, y) { return x.a === y.a; }

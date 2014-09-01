@@ -9,7 +9,7 @@ import add from "./add";
  * @category math
  * @param {Array} list An array of numbers
  * @return {number} The sum of all the numbers in the list.
- * @see reduce
+ * @see R.reduce
  * @example
  *
  *      sum([2,4,6,8,100,1]); // => 121

@@ -13,7 +13,7 @@ import flip from "./flip";
  * @param {Array} list1 The first list.
  * @param {Array} list2 The second list.
  * @return {Array} The elements in `list1` that are not in `list2`
- * @see differenceWith
+ * @see R.differenceWith
  * @example
  *
  *      difference([1,2,3,4], [7,6,5,4,3]); //= [1,2]

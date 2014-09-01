@@ -16,7 +16,7 @@ import containsWith from "./contains_with";
  * @param {Function} pred
  * @param {Array} list1 The first list.
  * @param {Array} list2 The second list.
- * @see difference
+ * @see R.difference
  * @return {Array} The first and second lists concatenated, with
  *                 duplicates removed.
  * @example

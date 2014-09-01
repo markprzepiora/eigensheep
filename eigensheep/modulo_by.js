@@ -11,7 +11,7 @@ import modulo from "./modulo";
  * @param {number} m The dividend.
  * @param {number} p the modulus.
  * @return {number} The result of `b mod a`.
- * @see modulo
+ * @see R.modulo
  * @example
  *
  *      var isOdd = moduloBy(2);

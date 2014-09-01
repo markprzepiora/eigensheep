@@ -2,7 +2,7 @@
  * internal helper for `where`
  *
  * @private
- * @see where
+ * @see R.where
  */
 export default function _satisfiesSpec(spec, parsedSpec, testObj) {
     if (spec === testObj) { return true; }

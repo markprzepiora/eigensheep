@@ -7,7 +7,7 @@ import binary from "./binary";
  * @func
  * @memberOf R
  * @category math
- * @see maxWith
+ * @see R.maxWith
  * @param {Array} list A list of numbers
  * @return {Number} The greatest number in the list
  * @example

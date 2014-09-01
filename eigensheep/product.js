@@ -9,7 +9,7 @@ import multiply from "./multiply";
  * @category math
  * @param {Array} list An array of numbers
  * @return {number} The product of all the numbers in the list.
- * @see reduce
+ * @see R.reduce
  * @example
  *
  *      product([2,4,6,8,100,1]); // => 38400

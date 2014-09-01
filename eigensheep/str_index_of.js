@@ -9,7 +9,7 @@ import invoker from "./invoker";
  * @param {String} c A string to find.
  * @param {String} str The string to search in
  * @return {Number} The first index of `c` or -1 if not found
- * @see invoker
+ * @see R.invoker
  * @example
  *
  *      strIndexOf('c', 'abcdefg) //=> 2

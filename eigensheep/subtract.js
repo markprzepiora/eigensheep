@@ -9,7 +9,7 @@ import curry2 from "./internal/curry2";
  * @param {number} a The first value.
  * @param {number} b The second value.
  * @return {number} The result of `a - b`.
- * @see subtractN
+ * @see R.subtractN
  * @example
  *
  *      var complementaryAngle = subtract(90);

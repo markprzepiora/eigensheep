@@ -9,7 +9,7 @@ import curry2 from "./internal/curry2";
  * @param {Function} keyFn A comparator function for elements in the list
  * @param {Array} list A list of comparable elements
  * @return {*} The greatest element in the list. `undefined` if the list is empty.
- * @see max
+ * @see R.max
  * @example
  *
  *      function cmp(obj) { return obj.x; }

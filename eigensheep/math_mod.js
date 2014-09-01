@@ -13,7 +13,7 @@ import _isInteger from "./internal/is_integer";
  * @param {number} m The dividend.
  * @param {number} p the modulus.
  * @return {number} The result of `b mod a`.
- * @see moduloBy
+ * @see R.moduloBy
  * @example
  *
  *      mathMod(-17, 5)  // 3

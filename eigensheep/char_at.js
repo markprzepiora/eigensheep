@@ -9,7 +9,7 @@ import invoker from "./invoker";
  * @param {Number} index An integer between 0 and the length of the string.
  * @param {String} str The string to extract a char from
  * @return {String} the character at `index` of `str`
- * @see invoker
+ * @see R.invoker
  * @example
  *
  *      charAt(8, 'abcdefghijklm'); //=> 'i'

@@ -10,7 +10,7 @@ import _pickAll from "./internal/pick_all";
  * @param {Array} names an array of String propery names to copy onto a new object
  * @param {Object} obj The object to copy from
  * @return {Object} A new object with only properties from `names` on it.
- * @see pick
+ * @see R.pick
  * @example
  *
  *      pick(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}) // => {a: 1, d: 4}

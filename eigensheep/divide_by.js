@@ -13,7 +13,7 @@ import divide from "./divide";
  * @param {number} a The second value.
  * @param {number} b The first value.
  * @return {number} The result of `b / a`.
- * @see divide
+ * @see R.divide
  * @example
  *
  *      var half = divideBy(2);

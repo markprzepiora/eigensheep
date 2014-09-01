@@ -5,7 +5,7 @@ import forEach from "../for_each";
  * Internal implementation of `pickAll`
  *
  * @private
- * @see pickAll
+ * @see R.pickAll
  */
 // TODO: document, even for internals...
 export default function _pickAll(names, obj) {

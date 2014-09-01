@@ -6,7 +6,7 @@ import always from "./always";
  * @func
  * @memberOf R
  * @category function
- * @see always
+ * @see R.always
  * @return {Boolean} true
  * @example
  *

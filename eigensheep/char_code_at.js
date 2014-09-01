@@ -9,7 +9,7 @@ import invoker from "./invoker";
  * @param {Number} index An integer between 0 and the length of the string.
  * @param {String} str The string to extract a charCode from
  * @return {Number} the code of the character at `index` of `str`
- * @see invoker
+ * @see R.invoker
  * @example
  *
  *      charCodeAt(8, 'abcdefghijklm'); //=> 105

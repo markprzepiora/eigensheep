@@ -10,7 +10,7 @@ import invoker from "./invoker";
  * @param {Number} indexB An integer between 0 and the length of the string.
  * @param {String} The string to extract from
  * @return {String} the extracted substring
- * @see invoker
+ * @see R.invoker
  * @example
  *
  *      substring(2, 5, 'abcdefghijklm'); //=> 'cde'

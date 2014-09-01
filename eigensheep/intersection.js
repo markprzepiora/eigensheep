@@ -12,7 +12,7 @@ import curry2 from "./internal/curry2";
  * @category relation
  * @param {Array} list1 The first list.
  * @param {Array} list2 The second list.
- * @see intersectionWith
+ * @see R.intersectionWith
  * @return {Array} The list of elements found in both `list1` and `list2`
  * @example
  *

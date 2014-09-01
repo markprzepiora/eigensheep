@@ -8,7 +8,7 @@ import curry2 from "./internal/curry2";
  * @category math
  * @param {Function} keyFn A comparator function for elements in the list
  * @param {Array} list A list of comparable elements
- * @see min
+ * @see R.min
  * @return {*} The greatest element in the list. `undefined` if the list is empty.
  * @example
  *
