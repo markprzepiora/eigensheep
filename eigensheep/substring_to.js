@@ -1,7 +1,7 @@
 import substring from "./substring";
 
 /**
- * The leading substring of a String ending before the nth character:
+ * The leading substring of a String ending at the nth character:
  *
  * @static
  * @memberOf R
