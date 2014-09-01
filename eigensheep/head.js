@@ -4,6 +4,7 @@
  * @func
  * @memberOf R
  * @category Array
+ * @sig [a] -> a
  * @param {Array} [arr=[]] The array to consider.
  * @return {*} The first element of the list, or `undefined` if the list is empty.
  * @example

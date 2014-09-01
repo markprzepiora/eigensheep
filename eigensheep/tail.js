@@ -8,6 +8,7 @@ import _slice from "./internal/slice";
  * @func
  * @memberOf R
  * @category Array
+ * @sig [a] -> [a]
  * @param {Array} [arr=[]] The array to consider.
  * @return {Array} A new array containing all but the first element of the input list, or an
  *         empty list if the input list is a falsy value (e.g. `undefined`).

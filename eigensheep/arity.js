@@ -8,6 +8,7 @@ import mkArgStr from "./internal/mk_arg_str";
  * @func
  * @memberOf R
  * @category Function
+ * @sig (Number, (* -> *)) -> (* -> *)
  * @param {number} n The desired arity of the returned function.
  * @param {Function} fn The function to wrap.
  * @return {Function} A new function wrapping `fn`. The new function is

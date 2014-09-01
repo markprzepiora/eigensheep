@@ -14,6 +14,7 @@ import compose from "./compose";
  * @func
  * @memberOf R
  * @category Function
+ * @sig ((a... -> b), (b -> c), ..., (x -> y), (y -> z)) -> (a... -> z)
  * @param {...Function} functions A variable number of functions.
  * @return {Function} A new function which represents the result of calling each of the
  *         input `functions`, passing the result of each function call to the next, from

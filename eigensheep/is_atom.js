@@ -7,6 +7,7 @@ import _isArray from "./internal/is_array";
  * @func
  * @memberOf R
  * @category Array
+ * @sig a -> Boolean
  * @param {*} x The element to consider.
  * @return {boolean} `true` if `x` is an atom, and `false` otherwise.
  * @example

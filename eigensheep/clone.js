@@ -6,6 +6,7 @@ import _slice from "./internal/slice";
  * @func
  * @memberOf R
  * @category Array
+ * @sig [a] -> [a]
  * @param {Array} list The list to clone.
  * @return {Array} A new copy of the original list.
  * @example

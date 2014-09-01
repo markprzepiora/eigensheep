@@ -16,6 +16,7 @@ import curry2 from "./internal/curry2";
  * @func
  * @memberOf R
  * @category List
+ * @sig (a -> *) -> [a] -> [a]
  * @param {Function} fn The function to invoke. Receives one argument, `value`.
  * @param {Array} list The list to iterate over.
  * @return {Array} The original list.
@@ -53,6 +54,7 @@ var forEach = curry2(function(fn, list) {
  * @func
  * @memberOf R
  * @category List
+ * @sig (a, i, [a] -> ) -> [a] -> [a]
  * @param {Function} fn The function to invoke. Receives three arguments:
  *        (`value`, `index`, `list`).
  * @param {Array} list The list to iterate over.

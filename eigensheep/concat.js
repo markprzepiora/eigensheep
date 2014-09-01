@@ -11,6 +11,7 @@ import is from "./is";
  * @func
  * @memberOf R
  * @category Array
+ * @sig [a] -> [a] -> [a]
  * @param {Array} list1 The first list to merge.
  * @param {Array} list2 The second set to merge.
  * @return {Array} A new array consisting of the contents of `list1` followed by the

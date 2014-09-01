@@ -11,6 +11,7 @@ import curry from "./curry";
  * @func
  * @memberOf R
  * @category Function
+ * @sig (String, Object, Number) -> (* -> *)
  * @param {string} name The name of the method to wrap.
  * @param {Object} obj The object to search for the `name` method.
  * @param [len] The desired arity of the wrapped method.

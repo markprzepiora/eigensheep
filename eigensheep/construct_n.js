@@ -11,6 +11,7 @@ import nAry from "./n_ary";
  * @func
  * @memberOf R
  * @category Function
+ * @sig Number -> (* -> {*}) -> (* -> {*})
  * @param {number} n The arity of the constructor function.
  * @param {Function} Fn The constructor function to wrap.
  * @return {Function} A wrapped, curried constructor function.

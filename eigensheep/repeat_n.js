@@ -8,6 +8,7 @@ import always from "./always";
  * @func
  * @memberOf R
  * @category Array
+ * @sig a -> n -> [a]
  * @param {*} value The value to repeat.
  * @param {number} n The desired size of the output list.
  * @return {Array} A new array containing `n` `value`s.

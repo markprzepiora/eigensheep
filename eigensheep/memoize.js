@@ -13,6 +13,7 @@ import _slice from "./internal/slice";
  * @func
  * @memberOf R
  * @category Function
+ * @sig (a... -> b) -> (a... -> b)
  * @param {Function} fn The function to be wrapped by `memoize`.
  * @return {Function}  Returns a memoized version of `fn`.
  * @example

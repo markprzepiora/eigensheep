@@ -12,6 +12,7 @@ import arity from "./arity";
  *
  * @private
  * @category Function
+ * @sig ((y -> z), (x -> y), ..., (b -> c), (a... -> b)) -> (a... -> z)
  * @param {Function} f A function.
  * @param {Function} g A function.
  * @return {Function} A new function that is the equivalent of `f(g(x))`.

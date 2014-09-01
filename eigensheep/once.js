@@ -6,6 +6,7 @@
  * @func
  * @memberOf R
  * @category Function
+ * @sig (a... -> b) -> (a... -> b)
  * @param {Function} fn The function to wrap in a call-only-once wrapper.
  * @return {Function} The wrapped function.
  * @example

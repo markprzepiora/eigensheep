@@ -4,6 +4,7 @@
  * @func
  * @memberOf R
  * @category Array
+ * @sig [a] -> Boolean
  * @param {Array} arr The array to consider.
  * @return {boolean} `true` if the `arr` argument has a length of 0 or
  *         if `arr` is a falsy value (e.g. undefined).

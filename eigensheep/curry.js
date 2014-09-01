@@ -13,6 +13,7 @@ import arity from "./arity";
  * @func
  * @memberOf R
  * @category Function
+ * @sig (* -> a) -> Number -> (* -> a)
  * @param {Function} fn The function to curry.
  * @param {number} [fnArity=fn.length] An optional arity for the returned function.
  * @return {Function} A new, curried function.

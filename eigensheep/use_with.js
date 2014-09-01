@@ -25,6 +25,7 @@ import arity from "./arity";
  * @func
  * @memberOf R
  * @category Function
+ * @sig ((* -> *), (* -> *)...) -> (* -> *)
  * @param {Function} fn The function to wrap.
  * @param {...Function} transformers A variable number of transformer functions
  * @return {Function} The wrapped function.

@@ -10,6 +10,7 @@ import curry2 from "./internal/curry2";
  * @func
  * @memberOf R
  * @category List
+ * @sig (i -> a) -> i -> [a]
  * @param {Function} fn The function to invoke. Passed one argument, the current value of `n`.
  * @param {number} n A value between `0` and `n - 1`. Increments after each function call.
  * @return {Array} An array containing the return values of all calls to `fn`.

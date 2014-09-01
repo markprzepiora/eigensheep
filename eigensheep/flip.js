@@ -9,6 +9,7 @@ import _concat from "./internal/concat";
  * @func
  * @memberOf R
  * @category Function
+ * @sig ((a, b) -> c) -> ((b, a) -> c)
  * @param {Function} fn The function to invoke with its first two parameters reversed.
  * @return {*} The result of invoking `fn` with its first two parameters' order reversed.
  * @example

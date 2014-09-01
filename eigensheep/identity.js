@@ -5,6 +5,7 @@
  * @func
  * @memberOf R
  * @category Core
+ * @sig a -> a
  * @param {*} x The value to return.
  * @return {*} The input value, `x`.
  * @example

@@ -13,6 +13,7 @@ import arity from "./arity";
  * @func
  * @memberOf R
  * @category Function
+ * @sig ((* -> *), ...) -> (* -> *)
  * @param {Function} fn The function to invoke.
  * @param {...*} [args] Arguments to append to `fn` when the returned function is invoked.
  * @return {Function} A new function wrapping `fn`. When invoked, it will call `fn` with
