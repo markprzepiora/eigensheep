@@ -1,0 +1,19 @@
+import foldl from "./foldl";
+import add from "./add";
+
+/**
+ * Adds together all the elements of a list.
+ *
+ * @static
+ * @memberOf R
+ * @category math
+ * @param {Array} list An array of numbers
+ * @return {number} The sum of all the numbers in the list.
+ * @see reduce
+ * @example
+ *
+ *      sum([2,4,6,8,100,1]); // => 121
+ */
+var sum = foldl(add, 0);
+
+export default sum;
