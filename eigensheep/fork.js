@@ -25,7 +25,6 @@ import _map from "./internal/map";
  *        returned function. Afterward, its resulting value will be passed to `after` as
  *        its second argument.
  * @return {Function} A new function.
- * @alias distributeTo
  * @example
  *
  *      var add = function(a, b) { return a + b; };

@@ -5,7 +5,7 @@ import arity from "./arity";
 /**
  * Accepts as its arguments a function and any number of values and returns a function that,
  * when invoked, calls the original function with all of the values prepended to the
- * original function's arguments list.
+ * original function's arguments list. In some libraries this function is named `applyLeft`.
  *
  * @static
  * @memberOf R
@@ -14,7 +14,6 @@ import arity from "./arity";
  * @param {...*} [args] Arguments to prepend to `fn` when the returned function is invoked.
  * @return {Function} A new function wrapping `fn`. When invoked, it will call `fn`
  *         with `args` prepended to `fn`'s arguments list.
- * @alias applyLeft
  * @example
  *
  *      var multiply = function(a, b) { return a * b; };

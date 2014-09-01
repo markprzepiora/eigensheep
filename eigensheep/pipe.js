@@ -9,6 +9,8 @@ import compose from "./compose";
  * `pipe` is the mirror version of `compose`. `pipe` is left-associative, which means that
  * each of the functions provided is executed in order from left to right.
  *
+ * In some libraries this function is named `sequence`.
+ *
  * @static
  * @memberOf R
  * @category Function
@@ -16,7 +18,6 @@ import compose from "./compose";
  * @return {Function} A new function which represents the result of calling each of the
  *         input `functions`, passing the result of each function call to the next, from
  *         right to left.
- * @alias sequence
  * @example
  *
  *      var triple = function(x) { return x * 3; };

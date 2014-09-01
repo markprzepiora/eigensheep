@@ -28,7 +28,6 @@ import arity from "./arity";
  * @param {Function} fn The function to wrap.
  * @param {...Function} transformers A variable number of transformer functions
  * @return {Function} The wrapped function.
- * @alias disperseTo
  * @example
  *
  *      var double = function(y) { return y * 2; };

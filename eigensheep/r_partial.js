@@ -8,7 +8,7 @@ import arity from "./arity";
  * function's arguments list.
  *
  * Note that `rPartial` is the opposite of `lPartial`: `rPartial` fills `fn`'s arguments
- * from the right to the left.
+ * from the right to the left. In some libraries this function is named `applyRight`.
  *
  * @static
  * @memberOf R
@@ -17,7 +17,6 @@ import arity from "./arity";
  * @param {...*} [args] Arguments to append to `fn` when the returned function is invoked.
  * @return {Function} A new function wrapping `fn`. When invoked, it will call `fn` with
  *         `args` appended to `fn`'s arguments list.
- * @alias applyRight
  * @example
  *
  *      var greet = function(salutation, title, firstName, lastName) {
