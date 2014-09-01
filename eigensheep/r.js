@@ -10,8 +10,6 @@ import any from "./any";
 import anyPredicates from "./any_predicates";
 import ap from "./ap";
 import append from "./append";
-import applyLeft from "./apply_left";
-import applyRight from "./apply_right";
 import arity from "./arity";
 import binary from "./binary";
 import car from "./car";
@@ -24,7 +22,6 @@ import comparator from "./comparator";
 import compose from "./compose";
 import concat from "./concat";
 import cons from "./cons";
-import constant from "./constant";
 import construct from "./construct";
 import constructN from "./construct_n";
 import contains from "./contains";
@@ -33,11 +30,8 @@ import countBy from "./count_by";
 import curry from "./curry";
 import difference from "./difference";
 import differenceWith from "./difference_with";
-import disperseTo from "./disperse_to";
-import distributeTo from "./distribute_to";
 import divide from "./divide";
 import divideBy from "./divide_by";
-import drop from "./drop";
 import each from "./each";
 import empty from "./empty";
 import eq from "./eq";
@@ -50,10 +44,8 @@ import findIndex from "./find_index";
 import findLast from "./find_last";
 import findLastIndex from "./find_last_index";
 import first from "./first";
-import flatMap from "./flat_map";
 import flatten from "./flatten";
 import flattenDeep from "./flatten_deep";
-import flattenShallow from "./flatten_shallow";
 import flip from "./flip";
 import foldl from "./foldl";
 import foldr from "./foldr";
@@ -80,7 +72,6 @@ import isAtom from "./is_atom";
 import isEmpty from "./is_empty";
 import isSet from "./is_set";
 import join from "./join";
-import K from "./k";
 import keys from "./keys";
 import keysIn from "./keys_in";
 import lPartial from "./l_partial";
@@ -104,7 +95,6 @@ import moduloBy from "./modulo_by";
 import multiply from "./multiply";
 import nAry from "./n_ary";
 import not from "./not";
-import nth from "./nth";
 import of from "./of";
 import omit from "./omit";
 import once from "./once";
@@ -133,7 +123,6 @@ import reject from "./reject";
 import remove from "./remove";
 import repeatN from "./repeat_n";
 import reverse from "./reverse";
-import sequence from "./sequence";
 import size from "./size";
 import skip from "./skip";
 import skipUntil from "./skip_until";
@@ -190,8 +179,6 @@ var R = {
     anyPredicates: anyPredicates,
     ap: ap,
     append: append,
-    applyLeft: applyLeft,
-    applyRight: applyRight,
     arity: arity,
     binary: binary,
     car: car,
@@ -204,7 +191,6 @@ var R = {
     compose: compose,
     concat: concat,
     cons: cons,
-    constant: constant,
     construct: construct,
     constructN: constructN,
     contains: contains,
@@ -213,11 +199,8 @@ var R = {
     curry: curry,
     difference: difference,
     differenceWith: differenceWith,
-    disperseTo: disperseTo,
-    distributeTo: distributeTo,
     divide: divide,
     divideBy: divideBy,
-    drop: drop,
     each: each,
     empty: empty,
     eq: eq,
@@ -230,10 +213,8 @@ var R = {
     findLast: findLast,
     findLastIndex: findLastIndex,
     first: first,
-    flatMap: flatMap,
     flatten: flatten,
     flattenDeep: flattenDeep,
-    flattenShallow: flattenShallow,
     flip: flip,
     foldl: foldl,
     foldr: foldr,
@@ -260,7 +241,6 @@ var R = {
     isEmpty: isEmpty,
     isSet: isSet,
     join: join,
-    K: K,
     keys: keys,
     keysIn: keysIn,
     lPartial: lPartial,
@@ -284,7 +264,6 @@ var R = {
     multiply: multiply,
     nAry: nAry,
     not: not,
-    nth: nth,
     of: of,
     omit: omit,
     once: once,
@@ -313,7 +292,6 @@ var R = {
     remove: remove,
     repeatN: repeatN,
     reverse: reverse,
-    sequence: sequence,
     size: size,
     skip: skip,
     skipUntil: skipUntil,
