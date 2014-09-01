@@ -6,7 +6,6 @@ import alwaysFalse from "./always_false";
 import alwaysTrue from "./always_true";
 import alwaysZero from "./always_zero";
 import and from "./and";
-import any from "./any";
 import anyPredicates from "./any_predicates";
 import ap from "./ap";
 import append from "./append";
@@ -175,7 +174,6 @@ var R = {
     alwaysTrue: alwaysTrue,
     alwaysZero: alwaysZero,
     and: and,
-    any: any,
     anyPredicates: anyPredicates,
     ap: ap,
     append: append,

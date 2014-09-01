@@ -1,4 +1,4 @@
-import any from "./any";
+import some from "./some";
 import _predicateWrap from "./internal/predicate_wrap";
 
 /**
@@ -20,6 +20,6 @@ import _predicateWrap from "./internal/predicate_wrap";
  *      f(8) // => true
  *      f(9) // => false
  */
-var anyPredicates = _predicateWrap(any);
+var anyPredicates = _predicateWrap(some);
 
 export default anyPredicates;
