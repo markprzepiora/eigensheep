@@ -21,7 +21,6 @@ export default function checkForMethod(methodname, func) {
             case 1: return callBound ? obj[methodname]() : func(a);
             case 2: return callBound ? obj[methodname](a) : func(a, b);
             case 3: return callBound ? obj[methodname](a, b) : func(a, b, c);
-            case 4: return callBound ? obj[methodname](a, b, c) : func(a, b, c, obj);
         }
     };
 }
