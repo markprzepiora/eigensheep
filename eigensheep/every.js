@@ -11,7 +11,6 @@ import curry2 from "./internal/curry2";
  * @param {Array} list The array to consider.
  * @return {boolean} `true` if the predicate is satisfied by every element, `false`
  *         otherwise
- * @alias every
  * @example
  *
  *      var lessThan2 = flip(lt)(2);

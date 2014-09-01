@@ -9,16 +9,13 @@ import NO_ARGS_EXCEPTION from "./internal/no_args_exception";
  * @param {String} p The property name
  * @param {Object} obj The object to query
  * @return {*} The value at obj.p
- * @alias nth
  * @alias get
  * @example
  *
  *      prop('x', {x: 100}) // => 100
  *      prop('x', {}) // => undefined
  *
- *      // or via the `nth` alias:
- *
- *      var fifth = nth(4); // indexed from 0, remember
+ *      var fifth = prop(4); // indexed from 0, remember
  *      fifth(['Bashful', 'Doc', 'Dopey', 'Grumpy', 'Happy', 'Sleepy', 'Sneezy']);
  *      //=> 'Happy'
  */

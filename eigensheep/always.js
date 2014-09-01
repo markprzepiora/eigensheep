@@ -6,8 +6,6 @@
  * @category Function
  * @param {*} val The value to wrap in a function
  * @return {Function} A Function :: * -> val
- * @alias constant
- * @alias K
  * @example
  *
  *      var t = always('Tee');

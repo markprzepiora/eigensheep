@@ -9,13 +9,10 @@ import _makeFlat from "./internal/make_flat";
  * @category List
  * @param {Array} list The array to consider.
  * @return {Array} The flattened list.
- * @alias flattenShallow
  * @example
  *
- * flat([1, [2], [[3]]]);
- * //= [1, 2, [3]]
- * flat([[1, 2], [3, 4], [5, 6]]);
- * //= [1, 2, 3, 4, 5, 6]
+ * unnest([1, [2], [[3]]]); //= [1, 2, [3]]
+ * unnest([[1, 2], [3, 4], [5, 6]]); //= [1, 2, 3, 4, 5, 6]
  */
 var unnest = _makeFlat(false);
 

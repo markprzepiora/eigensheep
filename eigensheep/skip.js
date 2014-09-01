@@ -11,7 +11,9 @@ import checkForMethod from "./internal/check_for_method";
  * @param {number} n The number of elements of `list` to skip.
  * @param {Array} list The array to consider.
  * @return {Array} The last `n` elements of `list`.
- * @alias drop
+ * @example
+ *
+ *     skip(3, [1,2,3,4,5,6,7]); // => [4,5,6,7]
  */
 var skip = curry2(checkForMethod('skip', function _skip(n, list) {
     if (n < list.length) {
