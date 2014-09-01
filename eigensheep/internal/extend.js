@@ -1,6 +1,4 @@
-import keys from "./keys";
-
-// TODO: Any objections to currying this function?
+import keys from "../keys";
 
 /**
  * Assigns own enumerable properties of the other object to the destination
@@ -17,7 +15,7 @@ import keys from "./keys";
  *      extend({ 'name': 'fred', 'age': 10 }, { 'age': 40 });
  *      // => { 'name': 'fred', 'age': 40 }
  */
-export default function extend(destination, other) {
+export default function _extend(destination, other) {
     var props = keys(other),
         i = -1, length = props.length;
     while (++i < length) {

@@ -34,7 +34,6 @@ import empty from "./empty";
 import eq from "./eq";
 import eqProps from "./eq_props";
 import every from "./every";
-import extend from "./extend";
 import filter from "./filter";
 import find from "./find";
 import findIndex from "./find_index";
@@ -59,6 +58,7 @@ import I from "./i";
 import identity from "./identity";
 import indexOf from "./index_of";
 import insert from "./insert";
+import installTo from "./install_to";
 import intersection from "./intersection";
 import intersectionWith from "./intersection_with";
 import invoker from "./invoker";
@@ -198,7 +198,6 @@ var R = {
     eq: eq,
     eqProps: eqProps,
     every: every,
-    extend: extend,
     filter: filter,
     find: find,
     findIndex: findIndex,
@@ -223,6 +222,7 @@ var R = {
     identity: identity,
     indexOf: indexOf,
     insert: insert,
+    installTo: installTo,
     intersection: intersection,
     intersectionWith: intersectionWith,
     invoker: invoker,

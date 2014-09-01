@@ -1,4 +1,4 @@
-import extend from "./extend";
+import _extend from "./internal/extend";
 import curry2 from "./internal/curry2";
 
 /**
@@ -18,7 +18,7 @@ import curry2 from "./internal/curry2";
  *      // => { 'name': 'fred', 'age': 40 }
  */
 var mixin = curry2(function _mixin(a, b) {
-    return extend(extend({}, a), b);
+    return _extend(_extend({}, a), b);
 });
 
 export default mixin;
