@@ -40,7 +40,6 @@ import find from "./find";
 import findIndex from "./find_index";
 import findLast from "./find_last";
 import findLastIndex from "./find_last_index";
-import first from "./first";
 import flatten from "./flatten";
 import flattenDeep from "./flatten_deep";
 import flip from "./flip";
@@ -206,7 +205,6 @@ var R = {
     findIndex: findIndex,
     findLast: findLast,
     findLastIndex: findLastIndex,
-    first: first,
     flatten: flatten,
     flattenDeep: flattenDeep,
     flip: flip,
