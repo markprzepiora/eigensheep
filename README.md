@@ -33,7 +33,8 @@ Tests will be run live as any production code or test code changes.
 
 ## TODO
 
-- Add remaining Ramda.js functions (have ~179/162 so far)
+- ~~Add remaining Ramda.js functions (have ~179/162 so far)~~
+- Merge changes from Ramda.js repo since the last few days
 - Add missing functions (isEqual from underscore/lodash!!)
 - Categorize functions (list functions, object functions, alises, etc.)
 - Create a custom builder
