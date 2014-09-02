@@ -7,8 +7,6 @@
  * @return {Boolean}
  */
 // TODO: document, even for internals...
-var _isInteger = Number.isInteger || function isInteger(n) {
+export default Number.isInteger || function isInteger(n) {
     return (n << 0) === n;
 };
-
-export default _isInteger;

@@ -16,7 +16,7 @@
  *      };
  *      firstThreeArgs(1, 2, 3, 4); //=> [1, 2, 3]
  */
-function _slice(args, from, to) {
+export default function(args, from, to) {
     from = (typeof from === 'number') ? from : 0;
     to = (typeof to === 'number') ? to : args.length;
     var length = to - from,
@@ -28,5 +28,3 @@ function _slice(args, from, to) {
     }
     return arr;
 }
-
-export default _slice;

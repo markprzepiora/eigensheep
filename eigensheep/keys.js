@@ -24,7 +24,7 @@ var nativeKeys = Object.keys;
  *
  *      keys({a: 1, b: 2, c: 3}) // => ['a', 'b', 'c']
  */
-var keys = function _keys(obj) {
+export default function(obj) {
     if (nativeKeys) {
         return nativeKeys(Object(obj));
     }
@@ -36,5 +36,3 @@ var keys = function _keys(obj) {
     }
     return ks;
 };
-
-export default keys;

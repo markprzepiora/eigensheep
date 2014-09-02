@@ -17,7 +17,7 @@ import curry2 from "./internal/curry2";
  *      findIndex(propEq('a', 2))(xs); //= 1
  *      findIndex(propEq('a', 4))(xs); //= -1
  */
-var findIndex = curry2(function _findIndex(fn, list) {
+export default curry2(function _findIndex(fn, list) {
     var idx = -1;
     var len = list.length;
     while (++idx < len) {
@@ -27,5 +27,3 @@ var findIndex = curry2(function _findIndex(fn, list) {
     }
     return -1;
 });
-
-export default findIndex;
