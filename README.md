@@ -40,9 +40,9 @@ passes in full. Yay!
 ## TODO
 
 - ~~Add remaining Ramda.js functions (have ~179/162 so far)~~
-- ~~Merge changes from Ramda.js repo since the last few days~~
-- Merge my bug fixes into Ramda.js master
-- Replace my ad-hoc test suite with real Ramda.js test suite
+- Merge changes from Ramda.js repo since the last few days
+- ~~Merge my bug fixes into Ramda.js master~~
+- ~~Replace my ad-hoc test suite with real Ramda.js test suite~~
 - Add missing functions (isEqual from underscore/lodash!!)
 - Categorize functions (list functions, object functions, alises, etc.)
 - Create a custom builder
