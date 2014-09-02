@@ -16,6 +16,4 @@ import curry2 from "./internal/curry2";
  *      add(2, 3);       //=  5
  *      add(7)(10);      //= 17
  */
-var add = curry2(function _add(a, b) { return a + b; });
-
-export default add;
+export default curry2(function _add(a, b) { return a + b; });

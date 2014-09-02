@@ -12,6 +12,4 @@ import pathOn from "./path_on";
  *
  *      path('a.b', {a: {b: 2}}) //= 2
  */
-var path = pathOn('.');
-
-export default path;
+export default pathOn('.');

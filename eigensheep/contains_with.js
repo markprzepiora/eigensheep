@@ -14,6 +14,4 @@ import _containsWith from "./internal/contains_with";
  */
 // TODO: add an example
 
-var containsWith = curry3(_containsWith);
-
-export default containsWith;
+export default curry3(_containsWith);

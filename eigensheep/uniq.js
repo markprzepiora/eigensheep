@@ -16,7 +16,7 @@ import _contains from "./internal/contains";
  *      uniq([{}, {}]);     //= [{}, {}]
  *      uniq([1, '1']);     //= [1, '1']
  */
-export default function uniq(list) {
+export default function(list) {
     var idx = -1, len = list.length;
     var result = [], item;
     while (++idx < len) {

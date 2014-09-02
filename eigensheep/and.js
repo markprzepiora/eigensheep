@@ -20,10 +20,8 @@ import curry2 from "./internal/curry2";
  *      f(100) // => true
  *      f(101) // => false
  */
-var and = curry2(function(f, g) {
+export default curry2(function(f, g) {
     return function _and() {
         return !!(f.apply(this, arguments) && g.apply(this, arguments));
     };
 });
-
-export default and;

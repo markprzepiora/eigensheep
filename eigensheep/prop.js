@@ -18,7 +18,7 @@ import NO_ARGS_EXCEPTION from "./internal/no_args_exception";
  *      fifth(['Bashful', 'Doc', 'Dopey', 'Grumpy', 'Happy', 'Sleepy', 'Sneezy']);
  *      //=> 'Happy'
  */
-export default function prop(p, obj) {
+export default function(p, obj) {
     switch (arguments.length) {
         case 0: throw NO_ARGS_EXCEPTION;
         case 1: return function _prop(obj) { return obj[p]; };

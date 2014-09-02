@@ -16,7 +16,7 @@ import curry2 from "./internal/curry2";
  *      range(1, 5);     //= [1, 2, 3, 4]
  *      range(50, 53);   //= [50, 51, 52]
  */
-var range = curry2(function _range(from, to) {
+export default curry2(function _range(from, to) {
     if (from >= to) {
         return [];
     }
@@ -26,5 +26,3 @@ var range = curry2(function _range(from, to) {
     }
     return result;
 });
-
-export default range;

@@ -22,10 +22,8 @@ import curry2 from "./internal/curry2";
  *
  *      takeWhile(isNotFour, [1, 2, 3, 4]); //=> [1, 2, 3]
  */
-var takeWhile = curry2(checkForMethod('takeWhile', function(fn, list) {
+export default curry2(checkForMethod('takeWhile', function(fn, list) {
     var idx = -1, len = list.length;
     while (++idx < len && fn(list[idx])) {}
     return _slice(list, 0, idx);
 }));
-
-export default takeWhile;

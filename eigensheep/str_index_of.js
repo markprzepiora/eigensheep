@@ -14,6 +14,4 @@ import invoker from "./invoker";
  *
  *      strIndexOf('c', 'abcdefg) //=> 2
  */
-var strIndexOf = invoker('indexOf', String.prototype);
-
-export default strIndexOf;
+export default invoker('indexOf', String.prototype);

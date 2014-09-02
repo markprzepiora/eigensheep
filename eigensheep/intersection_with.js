@@ -42,7 +42,7 @@ import uniqWith from "./uniq_with";
  *      //   {id: 177, name: 'Neil Young'}
  *      // ]
  */
-var intersectionWith = curry3(function(pred, list1, list2) {
+export default curry3(function(pred, list1, list2) {
     var results = [], idx = -1;
     while (++idx < list1.length) {
         if (_containsWith(pred, list1[idx], list2)) {
@@ -51,5 +51,3 @@ var intersectionWith = curry3(function(pred, list1, list2) {
     }
     return uniqWith(pred, results);
 });
-
-export default intersectionWith;

@@ -24,6 +24,6 @@ import nAry from "./n_ary";
  *      // Only 2 arguments are passed to the wrapped function
  *      takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
  */
-export default function _binary(fn) {
+export default function(fn) {
     return nAry(2, fn);
 };

@@ -14,6 +14,4 @@ import substring from "./substring";
  *
  *      substringTo(8, 'abcdefghijklm'); //=> 'abcdefgh'
  */
-var substringTo = substring(0);
-
-export default substringTo;
+export default substring(0);

@@ -18,8 +18,6 @@ import curry3 from "./internal/curry3";
  *      eqProps('a', o1, o2) // => false
  *      eqProps('c', o1, o2) // => true
  */
-var eqProps = curry3(function eqProps(prop, obj1, obj2) {
+export default curry3(function eqProps(prop, obj1, obj2) {
     return obj1[prop] === obj2[prop];
 });
-
-export default eqProps;

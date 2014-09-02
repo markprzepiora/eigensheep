@@ -19,7 +19,7 @@ import _concat from "./internal/concat";
  * slashify('a') //= 'a/'
  * slashify('a/') //= 'a/'
  */
-export default function wrap(fn, wrapper) {
+export default function(fn, wrapper) {
     return function() {
         return wrapper.apply(this, _concat([fn], arguments));
     };

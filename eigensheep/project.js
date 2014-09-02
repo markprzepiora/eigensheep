@@ -20,6 +20,4 @@ import useWith from "./use_with";
  *      var kids = [abby, fred];
  *      project(['name', 'grade'], kids); //=> [{name: 'Abby', grade: 2}, {name: 'Fred', grade: 7}]
  */
-var project = useWith(_map, pickAll, identity); // passing `identity` gives correct arity
-
-export default project;
+export default useWith(_map, pickAll, identity); // passing `identity` gives correct arity

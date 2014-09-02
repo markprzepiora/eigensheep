@@ -20,6 +20,6 @@ import _slice from "./internal/slice";
  *      var objectsClone = ramda.clone(objects);
  *      objects[0] === objectsClone[0]; //=> true
  */
-export default function clone(list) {
+export default function(list) {
     return _slice(list);
 };

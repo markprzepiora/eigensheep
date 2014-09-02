@@ -14,6 +14,6 @@ import binary from "./binary";
  *
  *      max([7, 3, 9, 2, 4, 9, 3]) // => 9
  */
-export default function max(list) {
+export default function(list) {
     return foldl(binary(Math.max), -Infinity, list);
 };

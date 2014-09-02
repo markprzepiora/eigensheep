@@ -20,6 +20,4 @@ import curry2 from "./internal/curry2";
  *
  *      subtract(10)(8); //= 2
  */
-var subtract = curry2(function _subtract(a, b) { return a - b; });
-
-export default subtract;
+export default curry2(function _subtract(a, b) { return a - b; });

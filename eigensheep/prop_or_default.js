@@ -24,8 +24,6 @@ import curry3 from "./internal/curry3";
  *      favorite(alice);  //=> undefined
  *      favoriteWithDefault(alice);  //=> 'Ramda'
  */
-var propOrDefault = curry3(function _propOrDefault(p, val, obj) {
+export default curry3(function _propOrDefault(p, val, obj) {
     return hasOwnProperty.call(obj, p) ? obj[p] : val;
 });
-
-export default propOrDefault;

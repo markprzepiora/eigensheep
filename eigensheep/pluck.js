@@ -16,8 +16,6 @@ import prop from "./prop";
  * pluck('a')([{a: 1}, {a: 2}]); //= [1, 2]
  * pluck(0)([[1, 2], [3, 4]]);   //= [1, 3]
  */
-var pluck = curry2(function _pluck(p, list) {
+export default curry2(function _pluck(p, list) {
     return _map(prop(p), list);
 });
-
-export default pluck;

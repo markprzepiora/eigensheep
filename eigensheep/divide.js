@@ -18,6 +18,4 @@ import curry2 from "./internal/curry2";
  *      reciprocal(4);   //= 0.25
  *      divide(71, 100); //= 0.71
  */
-var divide = curry2(function _divide(a, b) { return a / b; });
-
-export default divide;
+export default curry2(function _divide(a, b) { return a / b; });

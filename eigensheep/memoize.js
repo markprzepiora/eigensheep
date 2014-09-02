@@ -32,7 +32,7 @@ import _slice from "./internal/slice";
  *      // Note that argument order matters
  *      memoAdd(2, 1); //=> 3 (numberOfCalls => 3)
  */
-export default function memoize(fn) {
+export default function(fn) {
     var cache = {};
     return function() {
         var position = foldl(function(cache, arg) {

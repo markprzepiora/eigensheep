@@ -20,6 +20,4 @@ import _predicateWrap from "./internal/predicate_wrap";
  *      f(8) // => true
  *      f(9) // => false
  */
-var anyPredicates = _predicateWrap(some);
-
-export default anyPredicates;
+export default _predicateWrap(some);

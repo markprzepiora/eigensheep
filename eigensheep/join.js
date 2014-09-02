@@ -16,6 +16,4 @@ import invoker from "./invoker";
  *      spacer(['a', 2, 3.4]);   //= 'a 2 3.4'
  *      join('|', [1, 2, 3]);    //= '1|2|3'
  */
-var join = invoker('join', Array.prototype);
-
-export default join;
+export default invoker('join', Array.prototype);

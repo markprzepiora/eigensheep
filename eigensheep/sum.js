@@ -14,6 +14,4 @@ import add from "./add";
  *
  *      sum([2,4,6,8,100,1]); // => 121
  */
-var sum = foldl(add, 0);
-
-export default sum;
+export default foldl(add, 0);

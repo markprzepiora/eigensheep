@@ -14,6 +14,4 @@ import multiply from "./multiply";
  *
  *      product([2,4,6,8,100,1]); // => 38400
  */
-var product = foldl(multiply, 1);
-
-export default product;
+export default foldl(multiply, 1);

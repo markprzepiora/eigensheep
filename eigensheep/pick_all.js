@@ -16,6 +16,4 @@ import _pickAll from "./internal/pick_all";
  *      pick(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}) // => {a: 1, d: 4}
  *      pick(['a', 'e', 'f'], {a: 1, b: 2, c: 3, d: 4}) // => {a: 1, e: undefined, f: undefined}
  */
-var pickAll = curry2(_pickAll);
-
-export default pickAll;
+export default curry2(_pickAll);

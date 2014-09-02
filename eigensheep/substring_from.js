@@ -15,6 +15,4 @@ import flip from "./flip";
  *
  *      substringFrom(8, 'abcdefghijklm'); //=> 'ijklm'
  */
-var substringFrom = flip(substring)(void 0);
-
-export default substringFrom;
+export default flip(substring)(void 0);

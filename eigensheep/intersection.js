@@ -18,8 +18,6 @@ import curry2 from "./internal/curry2";
  *
  *      intersection([1,2,3,4], [7,6,5,4,3]); //= [1,2,3,4]
  */
-var intersection = curry2(function intersection(list1, list2) {
+export default curry2(function intersection(list1, list2) {
     return uniq(_filter(flip(_contains)(list1), list2));
 });
-
-export default intersection;

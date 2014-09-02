@@ -14,6 +14,4 @@ import _functionsWith from "./internal/functions_with";
  *      R.functions(R) // => returns list of ramda's own function names
  *      R.functions(this) // => returns list of function names in global scope's own function names
  */
-var functions = _functionsWith(keys);
-
-export default functions;
+export default _functionsWith(keys);

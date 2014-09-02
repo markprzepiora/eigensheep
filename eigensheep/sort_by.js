@@ -33,8 +33,6 @@ import comparator from "./comparator";
  *      var people = [clara, bob, alice];
  *      sortByNameCaseInsensitive(people); //= [alice, bob, clara]
  */
-var sortBy = curry2(function _sortBy(fn, list) {
+export default curry2(function _sortBy(fn, list) {
     return pluck('val', _keyValue(fn, list).sort(comparator(function(a, b) { return a.key < b.key; })));
 });
-
-export default sortBy;

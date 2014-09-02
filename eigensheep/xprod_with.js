@@ -19,7 +19,7 @@ import isEmpty from "./is_empty";
  *      xprodWith(f, [1, 2], ['a', 'b'])
  *      //= [f(1, 'a'), f(1, 'b'), f(2, 'a'), f(2, 'b')];
  */
-var xprodWith = curry3(function _xprodWith(fn, a, b) {
+export default curry3(function _xprodWith(fn, a, b) {
     if (isEmpty(a) || isEmpty(b)) {
         return [];
     }
@@ -34,5 +34,3 @@ var xprodWith = curry3(function _xprodWith(fn, a, b) {
     }
     return result;
 });
-
-export default xprodWith;

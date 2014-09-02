@@ -16,7 +16,7 @@
  *      alertOnce('Nothing'); // Doesn't alert
  *      alertOnce('Again'); // Doesn't alert
  */
-export default function once(fn) {
+export default function(fn) {
     var called = false, result;
     return function() {
         if (called) {

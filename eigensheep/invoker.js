@@ -26,7 +26,7 @@ import curry from "./curry";
  *      join('', ramda.map(firstChar, ['light', 'ampliifed', 'stimulated', 'emission', 'radiation']));
  *      //=> 'laser'
  */
-export default function _invoker(name, obj, len) {
+export default function(name, obj, len) {
     var method = obj[name];
     var length = len === void 0 ? method.length : len;
     return method && curry(function() {

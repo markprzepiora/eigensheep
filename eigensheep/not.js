@@ -16,7 +16,4 @@ import _not from "./internal/not";
  *      f(11) // => false
  *      f(9) // => true
  */
-
-var not = _not;
-
-export default not;
+export default _not;

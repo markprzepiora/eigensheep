@@ -15,10 +15,8 @@ import _contains from "./internal/contains";
  *
  *      omit(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}) // => {b: 2, c: 3}
  */
-var omit = curry2(function omit(names, obj) {
+export default curry2(function omit(names, obj) {
     return _pickWith(function(val, key) {
         return !_contains(key, names);
     }, obj);
 });
-
-export default omit;

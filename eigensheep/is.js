@@ -19,8 +19,6 @@ import curry2 from "./internal/curry2";
  *      is(Object, new String('')) // => true
  *      is(Number, {}) // => false
  */
-var is = curry2(function is(ctor, val) {
+export default curry2(function is(ctor, val) {
     return val != null && val.constructor === ctor || val instanceof ctor;
 });
-
-export default is;

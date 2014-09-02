@@ -12,7 +12,7 @@
  *      };
  *      sort(cmp, people);
  */
-export default function comparator(pred) {
+export default function(pred) {
     return function(a, b) {
         return pred(a, b) ? -1 : pred(b, a) ? 1 : 0;
     };

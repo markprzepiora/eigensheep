@@ -16,6 +16,4 @@ import pairWith from "./internal/pair_with";
  *
  *      toPairs({a: 1, b: 2, c: 3}); // [['a', 1], ['b', 2], ['c', 3]]
  */
-var toPairs = pairWith(keys);
-
-export default toPairs;
+export default pairWith(keys);

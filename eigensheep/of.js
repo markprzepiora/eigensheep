@@ -18,6 +18,6 @@ import _hasMethod from "./internal/has_method";
  *      R.of([2]); // => [[2]]
  *      R.of({}); // => [{}]
  */
-export default function of(x, container) {
+export default function(x, container) {
     return (_hasMethod('of', container)) ? container.of(x) : [x];
 };

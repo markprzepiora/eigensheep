@@ -16,11 +16,9 @@ import foldl from "./foldl";
  *      partition(contains('s'), ['sss', 'ttt', 'foo', 'bars'])
  *     // => [ [ 'sss', 'bars' ],  [ 'ttt', 'foo' ] ]
  */
-var partition = curry2(function _partition(pred, list) {
+export default curry2(function _partition(pred, list) {
     return foldl(function(acc, elt) {
         acc[pred(elt) ? 0 : 1].push(elt);
         return acc;
     }, [[], []], list);
 });
-
-export default partition;

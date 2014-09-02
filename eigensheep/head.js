@@ -11,7 +11,7 @@
  *
  *      ramda.head(['fi', 'fo', 'fum']); //=> 'fi'
  */
-export default function head(arr) {
+export default function(arr) {
     arr = arr || [];
     return arr[0];
 };

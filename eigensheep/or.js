@@ -19,10 +19,8 @@ import curry2 from "./internal/curry2";
  *      f(101) // => false
  *      f(8) // => true
  */
-var or = curry2(function(f, g) {
+export default curry2(function(f, g) {
     return function _or() {
         return !!(f.apply(this, arguments) || g.apply(this, arguments));
     };
 });
-
-export default or;

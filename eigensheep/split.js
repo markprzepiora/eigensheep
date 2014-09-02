@@ -19,6 +19,4 @@ import invoker from "./invoker";
  *      split('.', 'a.b.c.xyz.d');
  *      //= ['a', 'b', 'c', 'xyz', 'd']
  */
-var split = invoker('split', String.prototype, 1);
-
-export default split;
+export default invoker('split', String.prototype, 1);

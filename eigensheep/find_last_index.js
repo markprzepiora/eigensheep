@@ -17,7 +17,7 @@ import curry2 from "./internal/curry2";
  *      findLastIndex(propEq('a', 1))(xs); //= 1
  *      findLastIndex(propEq('a', 4))(xs); //= -1
  */
-var findLastIndex = curry2(function _findLastIndex(fn, list) {
+export default curry2(function _findLastIndex(fn, list) {
     var idx = list.length;
     while (--idx >= 0) {
         if (fn(list[idx])) {
@@ -26,5 +26,3 @@ var findLastIndex = curry2(function _findLastIndex(fn, list) {
     }
     return -1;
 });
-
-export default findLastIndex;

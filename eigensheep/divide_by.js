@@ -19,6 +19,4 @@ import divide from "./divide";
  *      var half = divideBy(2);
  *      half(42); // => 21
  */
-var divideBy = flip(divide);
-
-export default divideBy;
+export default flip(divide);

@@ -14,6 +14,4 @@ import _makeFlat from "./internal/make_flat";
  * unnest([1, [2], [[3]]]); //= [1, 2, [3]]
  * unnest([[1, 2], [3, 4], [5, 6]]); //= [1, 2, 3, 4, 5, 6]
  */
-var unnest = _makeFlat(false);
-
-export default unnest;
+export default _makeFlat(false);

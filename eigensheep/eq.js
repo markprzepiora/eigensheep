@@ -17,6 +17,4 @@ import curry2 from "./internal/curry2";
  *      eq(1, 1) // => true
  *      eq(1, '1') // => false
  */
-var eq = curry2(function _eq(a, b) { return a === b; });
-
-export default eq;
+export default curry2(function _eq(a, b) { return a === b; });

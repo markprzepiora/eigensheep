@@ -23,8 +23,6 @@ import unnest from "./unnest";
  * R.chain(duplicate, [1, 2, 3]); // => [1, 1, 2, 2, 3, 3]
  *
  */
-var chain = curry2(checkForMethod('chain', function _chain(f, list) {
+export default curry2(checkForMethod('chain', function _chain(f, list) {
     return unnest(_map(f, list));
 }));
-
-export default chain;

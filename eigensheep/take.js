@@ -13,8 +13,6 @@ import checkForMethod from "./internal/check_for_method";
  * @param {Array} list The array to query.
  * @return {Array} A new array containing the first elements of `list`.
  */
-var take = curry2(checkForMethod('take', function(n, list) {
+export default curry2(checkForMethod('take', function(n, list) {
     return _slice(list, 0, Math.min(n, list.length));
 }));
-
-export default take;

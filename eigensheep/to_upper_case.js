@@ -12,6 +12,4 @@ import invoker from "./invoker";
  *
  *      toUpperCase('abc') //= 'ABC'
  */
-var toUpperCase = invoker('toUpperCase', String.prototype);
-
-export default toUpperCase;
+export default invoker('toUpperCase', String.prototype);

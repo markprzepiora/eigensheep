@@ -20,8 +20,6 @@ import always from "./always";
  *      var repeatedObjs = ramda.repeatN(obj, 5); //=> [{}, {}, {}, {}, {}]
  *      repeatedObjs[0] === repeatedObjs[1]; //=> true
  */
-var repeatN = curry2(function _repeatN(value, n) {
+export default curry2(function _repeatN(value, n) {
     return times(always(value), n);
 });
-
-export default repeatN;

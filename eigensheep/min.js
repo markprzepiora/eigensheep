@@ -14,6 +14,6 @@ import binary from "./binary";
  *
  *      min([7, 3, 9, 2, 4, 9, 3]) // => 2
  */
-export default function min(list) {
+export default function(list) {
     return foldl(binary(Math.min), Infinity, list);
 };

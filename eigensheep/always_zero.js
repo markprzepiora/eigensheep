@@ -13,6 +13,4 @@ import always from "./always";
  *      alwaysZero() // => 0
  */
 
-var alwaysZero = always(0);
-
-export default alwaysZero;
+export default always(0);

@@ -24,7 +24,7 @@ import is from "./is";
  *      ramda.concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
  *      ramda.concat('ABC', 'DEF'); // 'ABCDEF'
  */
-var concat = curry2(function(set1, set2) {
+export default curry2(function(set1, set2) {
     if (isArray(set2)) {
         return _concat(set1, set2);
     } else if (is(String, set1)) {
@@ -35,5 +35,3 @@ var concat = curry2(function(set1, set2) {
         throw new TypeError("can't concat " + typeof set2);
     }
 });
-
-export default concat;

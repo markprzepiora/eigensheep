@@ -35,7 +35,7 @@ import _map from "./internal/map";
  *      //≅ multiply( add(1, 2), subtract(1, 2) );
  *      //=> -3
  */
-export default function converge(after) {
+export default function(after) {
     var fns = _slice(arguments, 1);
     return function() {
         var args = arguments;

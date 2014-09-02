@@ -17,7 +17,7 @@ import curry2 from "./internal/curry2";
  *      find(propEq('a', 2))(xs); //= {a: 2}
  *      find(propEq('a', 4))(xs); //= undefined
  */
-var find = curry2(function find(fn, list) {
+export default curry2(function find(fn, list) {
     var idx = -1;
     var len = list.length;
     while (++idx < len) {
@@ -26,5 +26,3 @@ var find = curry2(function find(fn, list) {
         }
     }
 });
-
-export default find;

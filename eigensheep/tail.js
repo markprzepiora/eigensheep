@@ -16,9 +16,7 @@ import _slice from "./internal/slice";
  *
  *      ramda.tail(['fi', 'fo', 'fum']); //=> ['fo', 'fum']
  */
-var tail = checkForMethod('tail', function(arr) {
+export default checkForMethod('tail', function(arr) {
     arr = arr || [];
     return (arr.length > 1) ? _slice(arr, 1) : [];
 });
-
-export default tail;

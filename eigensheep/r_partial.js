@@ -27,7 +27,7 @@ import arity from "./arity";
  *
  *      greetMsJaneJones('Hello'); //=> 'Hello, Ms. Jane Jones!'
  */
-export default function rPartial(fn) {
+export default function(fn) {
     var args = _slice(arguments, 1);
     return arity(Math.max(fn.length - args.length, 0), function() {
         return fn.apply(this, _concat(arguments, args));

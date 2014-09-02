@@ -15,8 +15,6 @@ import curry2 from "./internal/curry2";
  *
  *      sort(function(a, b) { return a - b; }, [4,2,7,5]); // => [2, 4, 5, 7];
  */
-var sort = curry2(function sort(comparator, list) {
+export default curry2(function sort(comparator, list) {
     return clone(list).sort(comparator);
 });
-
-export default sort;

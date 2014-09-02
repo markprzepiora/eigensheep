@@ -15,6 +15,4 @@ import curry2 from "./internal/curry2";
  *      lt(2, 0) // => false
  *      lt(2, 2) // => false
  */
-var lt = curry2(function _lt(a, b) { return a < b; });
-
-export default lt;
+export default curry2(function _lt(a, b) { return a < b; });

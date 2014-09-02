@@ -15,7 +15,7 @@ import curry2 from "./internal/curry2";
  * zip([1, 2, 3], ['a', 'b', 'c']);
  * //= [[1, 'a'], [2, 'b'], [3, 'c']]
  */
-var zip = curry2(function _zip(a, b) {
+export default curry2(function _zip(a, b) {
     var rv = [];
     var i = -1;
     var len = Math.min(a.length, b.length);
@@ -24,5 +24,3 @@ var zip = curry2(function _zip(a, b) {
     }
     return rv;
 });
-
-export default zip;

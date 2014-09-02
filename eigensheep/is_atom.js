@@ -21,6 +21,6 @@ import _isArray from "./internal/is_array";
  *      ramda.isAtom('test'); //=> true
  *      ramda.isAtom({}); //=> true
  */
-export default function isAtom(x) {
+export default function(x) {
     return x != null && !_isArray(x);
 };

@@ -22,6 +22,6 @@ import constructN from "./construct_n";
  *      };
  *      map(construct(Widget), allConfigs); //=> a list of Widgets
  */
-export default function construct(Fn) {
+export default function(Fn) {
     return constructN(Fn.length, Fn);
 };

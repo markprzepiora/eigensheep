@@ -16,7 +16,7 @@
  *      var f = new F();
  *      keys(f) // => ['x', 'y']
  */
-export default function keysIn(obj) {
+export default function(obj) {
     var prop, ks = [];
     for (prop in obj) {
         ks.push(prop);

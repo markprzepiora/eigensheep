@@ -19,7 +19,7 @@ import _containsWith from "./internal/contains_with";
  * uniqWith(strEq)([1, '1', 1]);    //= [1]
  * uniqWith(strEq)(['1', 1, 1]);    //= ['1']
  */
-var uniqWith = curry2(function _uniqWith(pred, list) {
+export default curry2(function _uniqWith(pred, list) {
     var idx = -1, len = list.length;
     var result = [], item;
     while (++idx < len) {
@@ -30,5 +30,3 @@ var uniqWith = curry2(function _uniqWith(pred, list) {
     }
     return result;
 });
-
-export default uniqWith;

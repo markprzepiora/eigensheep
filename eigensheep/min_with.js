@@ -17,7 +17,7 @@ import curry2 from "./internal/curry2";
  *      minWith(cmp, [a, b, c]) // => {x: 1}
  */
 // TODO: combine this with maxWith?
-var minWith = curry2(function _minWith(keyFn, list) {
+export default curry2(function _minWith(keyFn, list) {
     if (!(list && list.length > 0)) {
         return;
     }
@@ -31,5 +31,3 @@ var minWith = curry2(function _minWith(keyFn, list) {
     }
     return winner;
 });
-
-export default minWith;

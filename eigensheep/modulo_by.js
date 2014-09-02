@@ -18,6 +18,4 @@ import modulo from "./modulo";
  *      isOdd(42); // => 0
  *      isOdd(21); // => 1
  */
-var moduloBy = flip(modulo);
-
-export default moduloBy;
+export default flip(modulo);

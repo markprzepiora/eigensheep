@@ -19,6 +19,6 @@ import R from "./r";
  *      R.installTo(x) // => x now contains ramda functions
  *      R.installTo(this) // => add ramda functions to `this` object
  */
-export default function installTo(obj) {
+export default function(obj) {
     return _extend(obj, R);
 };

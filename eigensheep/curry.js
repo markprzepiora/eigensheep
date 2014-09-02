@@ -28,7 +28,7 @@ import arity from "./arity";
  *      var g = f(3);
  *      g(4);//=> 10
  */
-function curry(fn, fnArity) {
+export default function(fn, fnArity) {
     fnArity = typeof fnArity === 'number' ? fnArity : fn.length;
     function recurry(args) {
         return arity(Math.max(fnArity - (args && args.length || 0), 0), function() {
@@ -44,5 +44,3 @@ function curry(fn, fnArity) {
 
     return recurry([]);
 };
-
-export default curry;

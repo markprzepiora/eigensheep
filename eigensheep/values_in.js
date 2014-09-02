@@ -16,7 +16,7 @@
  *      var f = new F();
  *      valuesIn(f) // => ['X', 'Y']
  */
-export default function valuesIn(obj) {
+export default function(obj) {
     var prop, vs = [];
     for (prop in obj) {
         vs.push(obj[prop]);

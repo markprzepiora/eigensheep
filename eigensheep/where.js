@@ -33,7 +33,7 @@ import groupBy from "./group_by";
  *      var xs = [{x: 2, y: 1}, {x: 10, y: 2}, {x: 8, y: 3}, {x: 10, y: 4}];
  *      filter(where({x: 10}), xs); // ==> [{x: 10, y: 2}, {x: 10, y: 4}]
  */
-export default function where(spec, testObj) {
+export default function(spec, testObj) {
     var parsedSpec = groupBy(function(key) {
         return typeof spec[key] === 'function' ? 'fn' : 'obj';
     }, keys(spec));

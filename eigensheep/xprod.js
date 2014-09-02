@@ -17,7 +17,7 @@ import isEmpty from "./is_empty";
  *      xprod([1, 2], ['a', 'b']);
  *      //= [[1, 'a'], [1, 'b'], [2, 'a'], [2, 'b']]
  */
-var xprod = curry2(function _xprod(a, b) { // = xprodWith(prepend); (takes about 3 times as long...)
+export default curry2(function _xprod(a, b) { // = xprodWith(prepend); (takes about 3 times as long...)
     if (isEmpty(a) || isEmpty(b)) {
         return [];
     }
@@ -35,5 +35,3 @@ var xprod = curry2(function _xprod(a, b) { // = xprodWith(prepend); (takes about
     }
     return result;
 });
-
-export default xprod;

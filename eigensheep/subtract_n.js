@@ -22,6 +22,4 @@ import subtract from "./subtract";
  *
  *      subtract(10)(8); //= 2
  */
-var subtractN = flip(subtract);
-
-export default subtractN;
+export default flip(subtract);

@@ -11,7 +11,7 @@
  *      var t = always('Tee');
  *      t(); // => 'Tee'
  */
-export default function always(val) {
+export default function(val) {
     return function() {
         return val;
     };

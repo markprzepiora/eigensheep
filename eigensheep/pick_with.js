@@ -21,6 +21,4 @@ import curry2 from "./internal/curry2";
  *      function isUpperCase(val, key, object) { return key.toUpperCase() === key; }
  *      pickWith(isUpperCase, {a: 1, b: 2, A: 3, B: 4}) // => {A: 3, B: 4}
  */
-var pickWith = curry2(_pickWith);
-
-export default pickWith;
+export default curry2(_pickWith);

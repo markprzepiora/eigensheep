@@ -15,8 +15,6 @@ import curry3 from "./internal/curry3";
  *
  *      pathOn('/', 'a/b/c', {a: {b: {c: 3}}}) //= 3
  */
-var pathOn = curry3(function pathOn(sep, str, obj) {
+export default curry3(function pathOn(sep, str, obj) {
     return _path(str.split(sep), obj);
 });
-
-export default pathOn;

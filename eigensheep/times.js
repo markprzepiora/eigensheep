@@ -18,7 +18,7 @@ import curry2 from "./internal/curry2";
  *
  *      ramda.times(function(n) { return n; }, 5); //=> [0, 1, 2, 3, 4]
  */
-var times = curry2(function _times(fn, n) {
+export default curry2(function _times(fn, n) {
     var arr = new Array(n);
     var i = -1;
     while (++i < n) {
@@ -26,5 +26,3 @@ var times = curry2(function _times(fn, n) {
     }
     return arr;
 });
-
-export default times;

@@ -18,10 +18,8 @@ import _slice from "./internal/slice";
  *
  *      remove(2, 3, [1,2,3,4,5,6,7,8]) // => [1,2,6,7,8]
  */
-var remove = curry3(function _remove(start, count, list) {
+export default curry3(function _remove(start, count, list) {
     return _concat(
         _slice(list, 0, Math.min(start, list.length)),
         _slice(list, Math.min(list.length, start + count)));
 });
-
-export default remove;

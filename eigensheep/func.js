@@ -19,7 +19,7 @@ import _slice from "./internal/slice";
  *      var obj = { f: function() { return 'f called'; } };
  *      func('f', obj); // => 'f called'
  */
-export default function func(fn, obj) { // TODO: change param name: reserve `fn` for functions, not names?
+export default function(fn, obj) { // TODO: change param name: reserve `fn` for functions, not names?
     switch (arguments.length) {
         case 0: throw NO_ARGS_EXCEPTION;
         case 1: return function(obj) { return obj[fn].apply(obj, _slice(arguments, 1)); };

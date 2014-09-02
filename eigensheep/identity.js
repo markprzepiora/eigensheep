@@ -15,6 +15,6 @@
  *      var obj = {};
  *      ramda.identity(obj) === obj; //=> true
  */
-export default function identity(x) {
+export default function(x) {
     return x;
 };

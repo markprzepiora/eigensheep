@@ -11,6 +11,6 @@
  *      ramda.size([]); //=> 0
  *      ramda.size([1, 2, 3]); //=> 3
  */
-export default function size(arr) {
+export default function(arr) {
     return arr.length;
 };

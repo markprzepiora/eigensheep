@@ -16,6 +16,6 @@ import clone from "./clone";
  *      reverse([1]);        //= [1]
  *      reverse([]);         //= []
  */
-export default function reverse(list) {
+export default function(list) {
     return clone(list || []).reverse();
 };

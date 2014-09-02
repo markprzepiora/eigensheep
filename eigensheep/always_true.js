@@ -12,6 +12,4 @@ import always from "./always";
  *
  *      alwaysTrue() // => true
  */
-var alwaysTrue = always(true);
-
-export default alwaysTrue;
+export default always(true);

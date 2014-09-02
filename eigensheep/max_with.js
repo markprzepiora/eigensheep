@@ -16,7 +16,7 @@ import curry2 from "./internal/curry2";
  *      a = {x: 1}, b = {x: 2}, c = {x: 3};
  *      maxWith(cmp, [a, b, c]) // => {x: 3}
  */
-var maxWith = curry2(function _maxWith(keyFn, list) {
+export default curry2(function _maxWith(keyFn, list) {
     if (!(list && list.length > 0)) {
         return;
     }
@@ -30,6 +30,3 @@ var maxWith = curry2(function _maxWith(keyFn, list) {
     }
     return winner;
 });
-
-
-export default maxWith;

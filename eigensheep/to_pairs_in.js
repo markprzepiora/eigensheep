@@ -20,6 +20,4 @@ import pairWith from "./internal/pair_with";
  *      var f = new F();
  *      toPairsIn(f) // => [['x','X'], ['y','Y']]
  */
-var toPairsIn = pairWith(keysIn);
-
-export default toPairsIn;
+export default pairWith(keysIn);

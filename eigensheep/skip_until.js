@@ -21,10 +21,8 @@ import _slice from "./internal/slice";
  *
  *      skipUntil(isNotFour, [1, 2, 3, 4]); //=> [1, 2, 3]
  */
-var skipUntil = curry2(function _skipUntil(fn, list) {
+export default curry2(function _skipUntil(fn, list) {
     var idx = -1, len = list.length;
     while (++idx < len && !fn(list[idx])) {}
     return _slice(list, idx);
 });
-
-export default skipUntil;

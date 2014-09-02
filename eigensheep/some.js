@@ -20,6 +20,4 @@ import curry2 from "./internal/curry2";
  *      some(lessThan0)(xs); //= false
  *      some(lessThan2)(xs); //= true
  */
-var some = curry2(_some);
-
-export default some;
+export default curry2(_some);

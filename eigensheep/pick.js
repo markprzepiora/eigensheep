@@ -17,10 +17,8 @@ import _contains from "./internal/contains";
  *      pick(['a', 'd'], {a: 1, b: 2, c: 3, d: 4}) // => {a: 1, d: 4}
  *      pick(['a', 'e', 'f'], {a: 1, b: 2, c: 3, d: 4}) // => {a: 1}
  */
-var pick = curry2(function pick(names, obj) {
+export default curry2(function pick(names, obj) {
     return _pickWith(function(val, key) {
         return _contains(key, names);
     }, obj);
 });
-
-export default pick;

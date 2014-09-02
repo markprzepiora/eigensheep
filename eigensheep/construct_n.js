@@ -27,7 +27,7 @@ import nAry from "./n_ary";
  *      };
  *      map(constructN(1, Widget), allConfigs); //=> a list of Widgets
  */
-export default function constructN(n, Fn) {
+export default function(n, Fn) {
     var f = function() {
         var Temp = function() {}, inst, ret;
         Temp.prototype = Fn.prototype;

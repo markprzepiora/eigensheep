@@ -17,12 +17,10 @@ import curry3 from "./internal/curry3";
  * zipWith(f, [1, 2, 3], ['a', 'b', 'c']);
  * //= [f(1, 'a'), f(2, 'b'), f(3, 'c')]
  */
-var zipWith = curry3(function _zipWith(fn, a, b) {
+export default curry3(function _zipWith(fn, a, b) {
     var rv = [], i = -1, len = Math.min(a.length, b.length);
     while (++i < len) {
         rv[i] = fn(a[i], b[i]);
     }
     return rv;
 });
-
-export default zipWith;

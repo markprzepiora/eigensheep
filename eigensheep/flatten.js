@@ -14,6 +14,4 @@ import _makeFlat from "./internal/make_flat";
  * flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
  * //= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  */
-var flatten = _makeFlat(true);
-
-export default flatten;
+export default _makeFlat(true);

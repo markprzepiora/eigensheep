@@ -21,9 +21,7 @@ import curry2 from "./internal/curry2";
  *
  *      tap(100, function(x) { console.log('x is ' + x); }); // => 100 (and logs: 'x is 100')
  */
-var tap = curry2(function _tap(x, fn) {
+export default curry2(function _tap(x, fn) {
     if (typeof fn === 'function') { fn(x); }
     return x;
 });
-
-export default tap;

@@ -17,6 +17,4 @@ import curry2 from "./internal/curry2";
  *      triple(4);       //= 12
  *      multiply(2, 5);  //= 10
  */
-var multiply = curry2(function _multiply(a, b) { return a * b });
-
-export default multiply;
+export default curry2(function _multiply(a, b) { return a * b });

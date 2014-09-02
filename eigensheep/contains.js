@@ -19,6 +19,4 @@ import _contains from "./internal/contains";
  *      var obj = {};
  *      contains(obj)([{}, obj, {}]); //= true
  */
-var contains = curry2(_contains);
-
-export default contains;
+export default curry2(_contains);

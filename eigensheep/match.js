@@ -14,6 +14,4 @@ import invoker from "./invoker";
  *
  *      match(/([a-z]a)/g, 'bananas'); //=> ['ba', 'na', 'na']
  */
-var match = invoker('match', String.prototype);
-
-export default match;
+export default invoker('match', String.prototype);

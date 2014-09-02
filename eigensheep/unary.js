@@ -24,6 +24,6 @@ import nAry from "./n_ary";
  *      // Only 1 argument is passed to the wrapped function
  *      takesOneArg(1, 2); //=> [1, undefined]
  */
-export default function _unary(fn) {
+export default function(fn) {
     return nAry(1, fn);
 };

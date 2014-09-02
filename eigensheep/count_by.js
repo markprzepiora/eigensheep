@@ -22,11 +22,9 @@ import _keyValue from "./internal/key_value";
  *      countBy(Math.floor)(numbers);    //= {'1': 3, '2': 2, '3': 1}
  *      countBy(toLowerCase)(letters);   //= {'a': 5, 'b': 4, 'c': 3}
  */
-var countBy = curry2(function countBy(fn, list) {
+export default curry2(function countBy(fn, list) {
     return foldl(function(counts, obj) {
         counts[obj.key] = (counts[obj.key] || 0) + 1;
         return counts;
     }, {}, _keyValue(fn, list));
 });
-
-export default countBy;

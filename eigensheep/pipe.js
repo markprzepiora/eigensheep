@@ -28,6 +28,6 @@ import compose from "./compose";
  *
  *      squareThenDoubleThenTriple(5); //≅ triple(double(square(5))) => 150
  */
-export default function pipe() {
+export default function() {
     return compose.apply(this, _slice(arguments).reverse());
 };

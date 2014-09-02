@@ -11,7 +11,7 @@
  *
  *      ramda.last(['fi', 'fo', 'fum']); //=> 'fum'
  */
-export default function last(arr) {
+export default function(arr) {
     arr = arr || [];
     return arr[arr.length - 1];
 };

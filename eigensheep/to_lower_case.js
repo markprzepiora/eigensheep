@@ -12,6 +12,4 @@ import invoker from "./invoker";
  *
  *      toLowerCase('XYZ') //= 'xyz'
  */
-var toLowerCase = invoker('toLowerCase', String.prototype);
-
-export default toLowerCase;
+export default invoker('toLowerCase', String.prototype);

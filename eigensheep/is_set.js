@@ -15,7 +15,7 @@ import _indexOf from "./internal/index_of";
  *      isSet([1, 1]);   //= false
  *      isSet([{}, {}]); //= true
  */
-export default function isSet(list) {
+export default function(list) {
     var len = list.length;
     var i = -1;
     while (++i < len) {

@@ -14,12 +14,10 @@ import curry2 from "./internal/curry2";
  *      zipObj(['a', 'b', 'c'], [1, 2, 3]);
  *      //= {a: 1, b: 2, c: 3}
  */
-var zipObj = curry2(function _zipObj(keys, values) {
+export default curry2(function _zipObj(keys, values) {
     var i = -1, len = keys.length, out = {};
     while (++i < len) {
         out[keys[i]] = values[i];
     }
     return out;
 });
-
-export default zipObj;

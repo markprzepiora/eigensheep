@@ -15,6 +15,4 @@ import invoker from "./invoker";
  *
  *      substring(2, 5, 'abcdefghijklm'); //=> 'cde'
  */
-var substring = invoker('substring', String.prototype);
-
-export default substring;
+export default invoker('substring', String.prototype);

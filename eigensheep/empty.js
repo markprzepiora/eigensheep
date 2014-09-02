@@ -12,6 +12,6 @@ import hasMethod from "./internal/has_method";
  *
  * R.empty([1,2,3,4,5]); // => []
  */
-export default function empty(x) {
+export default function(x) {
     return (hasMethod('empty', x)) ? x.empty() : [];
 };

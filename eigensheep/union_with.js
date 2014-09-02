@@ -22,8 +22,6 @@ import _concat from "./internal/concat";
  *      var l2 = [{a: 1}, {a: 4}];
  *      unionWith(cmp, l1, l2); //= [{a: 1}, {a: 2}, {a: 4}]
  */
-var unionWith = curry3(function _unionWith(pred, list1, list2) {
+export default curry3(function _unionWith(pred, list1, list2) {
     return uniqWith(pred, _concat(list1, list2));
 });
-
-export default unionWith;

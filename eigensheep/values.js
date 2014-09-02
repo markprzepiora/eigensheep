@@ -14,7 +14,7 @@ import keys from "./keys";
  *
  *      values({a: 1, b: 2, c: 3}) // => [1, 2, 3]
  */
-export default function values(obj) {
+export default function(obj) {
     var prop, props = keys(obj),
         length = props.length,
         vals = new Array(length);

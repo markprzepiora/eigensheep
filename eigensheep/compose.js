@@ -56,7 +56,7 @@ function internalCompose(f, g) {
  *
  *      squareThenDoubleThenTriple(5); //≅ triple(double(square(5))) => 150
  */
-export default function compose() {
+export default function() {
     switch (arguments.length) {
         case 0: throw NO_ARGS_EXCEPTION;
         case 1: return arguments[0];

@@ -55,7 +55,7 @@ import arity from "./arity";
  *      addDoubleAndSquare(10, 5, 100); //≅ addAll(double(10), square(5), ramda.identity(100));
  *      //=> 145
  */
-export default function useWith(fn /*, transformers */) {
+export default function(fn /*, transformers */) {
     var transformers = _slice(arguments, 1);
     var tlen = transformers.length;
     return curry(arity(tlen, function() {

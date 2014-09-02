@@ -15,6 +15,6 @@ import _concat from "./internal/concat";
  *
  *      ramda.prepend('fee', ['fi', 'fo', 'fum']); //=> ['fee', 'fi', 'fo', 'fum']
  */
-export default function prepend(el, arr) {
+export default function(el, arr) {
     return _concat([el], arr);
 }

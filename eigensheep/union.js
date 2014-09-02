@@ -18,6 +18,4 @@ import curry2 from "./internal/curry2";
  *
  *      union([1, 2, 3], [2, 3, 4]); //= [1, 2, 3, 4]
  */
-var union = curry2(compose(uniq, concat));
-
-export default union;
+export default curry2(compose(uniq, concat));

@@ -16,6 +16,4 @@ import flip from "./flip";
  *
  *      prop({x: 100}, 'x'); // => 100
  */
-var props = flip(prop);
-
-export default props;
+export default flip(prop);

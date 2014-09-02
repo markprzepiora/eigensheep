@@ -19,8 +19,6 @@ import curry2 from "./internal/curry2";
  *      ramda.append('tests', []); //=> ['tests']
  *      ramda.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
-var append = curry2(function (el, list) {
+export default curry2(function (el, list) {
     return _concat(list, [el]);
 });
-
-export default append;

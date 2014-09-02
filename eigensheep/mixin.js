@@ -17,8 +17,6 @@ import curry2 from "./internal/curry2";
  *      mixin({ 'name': 'fred', 'age': 10 }, { 'age': 40 });
  *      // => { 'name': 'fred', 'age': 40 }
  */
-var mixin = curry2(function _mixin(a, b) {
+export default curry2(function _mixin(a, b) {
     return _extend(_extend({}, a), b);
 });
-
-export default mixin;

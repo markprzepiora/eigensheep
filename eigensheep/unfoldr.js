@@ -21,7 +21,7 @@ import curry2 from "./internal/curry2";
  *      var f = function(n) { return n > 50 ? false : [-n, n + 10] };
  *      unfoldr(f, 10) //= [-10, -20, -30, -40, -50]
  */
-var unfoldr = curry2(function _unfoldr(fn, seed) {
+export default curry2(function _unfoldr(fn, seed) {
     var pair = fn(seed);
     var result = [];
     while (pair && pair.length) {
@@ -30,5 +30,3 @@ var unfoldr = curry2(function _unfoldr(fn, seed) {
     }
     return result;
 });
-
-export default unfoldr;

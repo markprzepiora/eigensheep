@@ -14,6 +14,5 @@ import invoker from "./invoker";
  *
  *      charAt(8, 'abcdefghijklm'); //=> 'i'
  */
-var charAt = invoker('charAt', String.prototype);
+export default invoker('charAt', String.prototype);
 
-export default charAt;

@@ -27,8 +27,6 @@ import containsWith from "./contains_with";
  *      differenceWith(cmp, l1, l2); //= [{a: 1}, {a: 2}]
  *
  */
-var differenceWith = curry3(function differenceWith(pred, first, second) {
+export default curry3(function differenceWith(pred, first, second) {
     return uniqWith(pred)(_reject(flip(containsWith(pred))(second), first));
 });
-
-export default differenceWith;

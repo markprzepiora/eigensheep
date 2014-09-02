@@ -13,7 +13,7 @@ import _isArray from "./internal/is_array";
  *      fromPairs([['a', 1], ['b', 2],  ['c', 3]]);
  *      //= {a: 1, b: 2, c: 3}
  */
-export default function fromPairs(pairs) {
+export default function(pairs) {
     var i = -1, len = pairs.length, out = {};
     while (++i < len) {
         if (_isArray(pairs[i]) && pairs[i].length) {

@@ -21,6 +21,4 @@ import curry2 from "./internal/curry2";
  *      modulo(-17, 3) // => -2
  *      modulo(17, -3) // => 2
  */
-var modulo = curry2(function _modulo(a, b) { return a % b; });
-
-export default modulo;
+export default curry2(function _modulo(a, b) { return a % b; });

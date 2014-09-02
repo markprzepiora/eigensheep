@@ -28,7 +28,7 @@ import arity from "./arity";
  *      var sayHelloToMs = ramda.lPartial(sayHello, 'Ms.');
  *      sayHelloToMs('Jane', 'Jones'); //=> 'Hello, Ms. Jane Jones!'
  */
-export default function lPartial(fn /*, args */) {
+export default function(fn /*, args */) {
     var args = _slice(arguments, 1);
     return arity(Math.max(fn.length - args.length, 0), function() {
         return fn.apply(this, _concat(args, arguments));

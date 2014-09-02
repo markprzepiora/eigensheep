@@ -19,7 +19,7 @@ import curry2 from "./internal/curry2";
  *      every(lessThan2)(xs); //= false
  *      every(lessThan3)(xs); //= true
  */
-var every = curry2(function(fn, list) {
+export default curry2(function(fn, list) {
     var i = -1;
     while (++i < list.length) {
         if (!fn(list[i])) {
@@ -28,5 +28,3 @@ var every = curry2(function(fn, list) {
     }
     return true;
 });
-
-export default every;

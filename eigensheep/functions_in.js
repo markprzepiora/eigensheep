@@ -14,6 +14,4 @@ import keysIn from "./keys_in";
  *      R.functionsIn(R) // => returns list of ramda's own and prototype function names
  *      R.functionsIn(this) // => returns list of function names in global scope's own and prototype function names
  */
-var functionsIn = _functionsWith(keysIn);
-
-export default functionsIn;
+export default _functionsWith(keysIn);

@@ -21,8 +21,6 @@ import curry3 from "./internal/curry3";
  *      var hasBrownHair = propEq('hair', 'brown');
  *      filter(hasBrownHair, kids); //= [fred, rusty]
  */
-var propEq = curry3(function _propEq(name, val, obj) {
+export default curry3(function _propEq(name, val, obj) {
     return obj[name] === val;
 });
-
-export default propEq;

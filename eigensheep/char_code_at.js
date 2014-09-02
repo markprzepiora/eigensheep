@@ -15,6 +15,4 @@ import invoker from "./invoker";
  *      charCodeAt(8, 'abcdefghijklm'); //=> 105
  *     // (... 'a' ~ 97, 'b' ~ 98, ... 'i' ~ 105)
  */
-var charCodeAt = invoker('charCodeAt', String.prototype);
-
-export default charCodeAt;
+export default invoker('charCodeAt', String.prototype);

@@ -30,12 +30,10 @@ import append from "./append";
  *     //   'F': [{name: 'Eddy', score: 58}]
  *     // }
  */
-var groupBy = curry2(function _groupBy(fn, list) {
+export default curry2(function _groupBy(fn, list) {
     return foldl(function(acc, elt) {
         var key = fn(elt);
         acc[key] = append(elt, acc[key] || (acc[key] = []));
         return acc;
     }, {}, list);
 });
-
-export default groupBy;

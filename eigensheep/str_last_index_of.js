@@ -15,6 +15,4 @@ import invoker from "./invoker";
  *
  *      strLastIndexOf('a', 'banana split') //=> 5
  */
-var strLastIndexOf = invoker('lastIndexOf', String.prototype);
-
-export default strLastIndexOf;
+export default invoker('lastIndexOf', String.prototype);

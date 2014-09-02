@@ -15,6 +15,6 @@
  *      ramda.isEmpty(); //=> true
  *      ramda.isEmpty(null); //=> true
  */
-export default function isEmpty(arr) {
+export default function(arr) {
     return !arr || !arr.length;
 }
