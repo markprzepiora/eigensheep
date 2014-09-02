@@ -37,6 +37,6 @@ import _map from "./map";
  *      //    }
  *      // ];
  */
-export default function _keyValue(fn, list) { // TODO: Should this be made public?
+export default function(fn, list) { // TODO: Should this be made public?
     return _map(function(item) { return { key: fn(item), val: item }; }, list);
 }

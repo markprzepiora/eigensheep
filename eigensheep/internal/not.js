@@ -1,4 +1,4 @@
-export default function _not(f) {
+export default function(f) {
     return function() {
       return !f.apply(this, arguments)
     };

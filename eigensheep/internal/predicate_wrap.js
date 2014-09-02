@@ -11,7 +11,7 @@ import max from "../max";
  * @see R.some
  */
 // TODO: document, even for internals...
-export default function _predicateWrap(predPicker) {
+export default function(predPicker) {
     return function(preds /* , args */) {
         var predIterator = function() {
             var args = arguments;

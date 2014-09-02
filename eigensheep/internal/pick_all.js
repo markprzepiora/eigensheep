@@ -8,7 +8,7 @@ import forEach from "../for_each";
  * @see R.pickAll
  */
 // TODO: document, even for internals...
-export default function _pickAll(names, obj) {
+export default function(names, obj) {
     var copy = {};
     forEach(function(name) {
         copy[name] = obj[name];

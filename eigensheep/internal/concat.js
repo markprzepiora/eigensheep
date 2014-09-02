@@ -10,7 +10,7 @@
  *
  *      concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
  */
-export default function _concat(set1, set2) {
+export default function(set1, set2) {
     set1 = set1 || [];
     set2 = set2 || [];
     var length1 = set1.length,

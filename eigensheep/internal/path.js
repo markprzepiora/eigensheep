@@ -13,7 +13,7 @@
  *
  *      path(['a', 'b'], {a: {b: 2}}) // => 2
  */
-export default function _path(paths, obj) {
+export default function(paths, obj) {
     var i = -1, length = paths.length, val;
     if (obj == null) { return; }
     val = obj;

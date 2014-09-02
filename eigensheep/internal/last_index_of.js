@@ -12,7 +12,7 @@
  * @return {Number} the index of the found item, or -1
  *
  */
-export default function _lastIndexOf(array, item, from) {
+export default function(array, item, from) {
     var idx = array.length;
     if (typeof from == 'number') {
         idx = from < 0 ? idx + from + 1 : Math.min(idx, from + 1);

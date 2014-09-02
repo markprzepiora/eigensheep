@@ -4,7 +4,7 @@
  * @private
  * @see R.where
  */
-export default function _satisfiesSpec(spec, parsedSpec, testObj) {
+export default function(spec, parsedSpec, testObj) {
     if (spec === testObj) { return true; }
     if (testObj == null) { return false; }
     parsedSpec.fn = parsedSpec.fn || [];

@@ -15,7 +15,7 @@ import keys from "../keys";
  *      extend({ 'name': 'fred', 'age': 10 }, { 'age': 40 });
  *      // => { 'name': 'fred', 'age': 40 }
  */
-export default function _extend(destination, other) {
+export default function(destination, other) {
     var props = keys(other),
         i = -1, length = props.length;
     while (++i < length) {

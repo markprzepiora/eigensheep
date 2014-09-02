@@ -6,7 +6,7 @@ import filter from "../filter";
  * @return {Function} A function that takes an object and returns an array of function names
  *
  */
-export default function _functionsWith(fn) {
+export default function(fn) {
     return function(obj) {
         return filter(function(key) { return typeof obj[key] === 'function'; }, fn(obj));
     };

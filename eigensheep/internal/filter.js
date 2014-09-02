@@ -1,4 +1,4 @@
-export default function _filter(fn, list) {
+export default function(fn, list) {
     var idx = -1, len = list.length, result = [];
     while (++idx < len) {
         if (fn(list[idx])) {
