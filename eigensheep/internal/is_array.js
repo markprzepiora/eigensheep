@@ -14,8 +14,6 @@ var toString = Object.prototype.toString;
  *      isArray(true); //=> false
  *      isArray({}); //=> false
  */
-var isArray = Array.isArray || function _isArray(val) {
+export default Array.isArray || function _isArray(val) {
     return val && val.length >= 0 && toString.call(val) === '[object Array]';
 };
-
-export default isArray;

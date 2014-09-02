@@ -16,7 +16,7 @@ import NO_ARGS_EXCEPTION from "./no_args_exception";
  *
  *      var curriedAddThree = curry3(addThree);
  */
-export default function curry3(fn) {
+export default function(fn) {
     return function(a, b, c) {
         switch (arguments.length) {
             case 0:

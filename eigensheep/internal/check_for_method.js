@@ -11,7 +11,7 @@ import isArray from "./is_array";
  * @param {String} methodname property to check for a custom implementation
  * @return {Object} whatever the return value of the method is
  */
-export default function checkForMethod(methodname, func) {
+export default function(methodname, func) {
     return function(a, b, c) {
         var length = arguments.length;
         var obj = arguments[length - 1],

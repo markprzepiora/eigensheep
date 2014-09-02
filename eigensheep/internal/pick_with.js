@@ -7,7 +7,7 @@ import keys from "../keys";
  *
  */
 // TODO: document, even for internals...
-export default function pickWith(test, obj) {
+export default function(test, obj) {
     var copy = {},
         props = keys(obj), prop, val;
     for (var i = 0, len = props.length; i < len; i++) {

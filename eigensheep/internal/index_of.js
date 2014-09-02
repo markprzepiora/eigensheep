@@ -12,7 +12,7 @@
  * @return {Number} the index of the found item, or -1
  *
  */
-export default function indexOf(array, item, from) {
+export default function(array, item, from) {
     var i = 0, length = array.length;
     if (typeof from == 'number') {
         i = from < 0 ? Math.max(0, length + from) : from;

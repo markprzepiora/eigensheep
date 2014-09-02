@@ -7,7 +7,7 @@ import _isArrayLike from "./is_array_like";
  * @private
  */
 // TODO: document, even for internals...
-export default function makeFlat(recursive) {
+export default function(recursive) {
     return function __flatt(list) {
         var array, value, result = [], val, i = -1, j, ilen = list.length, jlen;
         while (++i < ilen) {

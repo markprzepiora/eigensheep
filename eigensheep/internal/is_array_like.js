@@ -14,7 +14,7 @@ import _isArray from "./is_array";
  *      isArrayLike({}); //=> false
  *      isArrayLike({length: 10}); //=> true
  */
-export default function isArrayLike(x) {
+export default function(x) {
     return _isArray(x) || (
         !!x &&
         typeof x === 'object' &&

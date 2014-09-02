@@ -7,7 +7,7 @@ import map from "../map";
  * @return {Function} A function that takes an object and returns an array of
  *                    key-value arrays.
  */
-export default function pairWith(fn) {
+export default function(fn) {
     return function(obj) {
         return map(function(key) { return [key, obj[key]]; }, fn(obj));
     };

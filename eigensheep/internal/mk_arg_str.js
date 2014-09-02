@@ -11,12 +11,10 @@
  *      mkArgStr(2); //= 'arg1, arg2'
  *      mkArgStr(3); //= 'arg1, arg2, arg3'
  */
-function mkArgStr(n) {
+export default function(n) {
     var arr = [], idx = -1;
     while (++idx < n) {
         arr[idx] = 'arg' + idx;
     }
     return arr.join(', ');
 };
-
-export default mkArgStr;

@@ -15,7 +15,7 @@ import NO_ARGS_EXCEPTION from "./no_args_exception";
  *
  *      var curriedAddTwo = curry2(addTwo);
  */
-function curry2(fn) {
+export default function(fn) {
     return function(a, b) {
         switch (arguments.length) {
             case 0:
@@ -29,5 +29,3 @@ function curry2(fn) {
         }
     };
 }
-
-export default curry2;

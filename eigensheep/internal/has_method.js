@@ -18,8 +18,6 @@ import isArray from "./is_array";
  *      hasMethod('shout', person); //=> true
  *      hasMethod('foo', person); //=> false
  */
-function hasMethod(methodName, obj) {
+export default function(methodName, obj) {
     return obj && !isArray(obj) && typeof obj[methodName] === 'function';
 };
-
-export default hasMethod;
