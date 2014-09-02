@@ -6,10 +6,10 @@ import _map from "./internal/map";
  * invoke the first function, `after`, passing as its arguments the results of invoking the
  * second and third functions with whatever arguments are passed to the new function.
  *
- * For example, a function produced by `fork` is equivalent to:
+ * For example, a function produced by `converge` is equivalent to:
  *
  * ```javascript
- *   var h = ramda.fork(e, f, g);
+ *   var h = ramda.converge(e, f, g);
  *   h(1, 2); //≅ e( f(1, 2), g(1, 2) )
  * ```
  *
@@ -31,11 +31,11 @@ import _map from "./internal/map";
  *      var multiply = function(a, b) { return a * b; };
  *      var subtract = function(a, b) { return a - b; };
  *
- *      ramda.fork(multiply, add, subtract)(1, 2);
+ *      ramda.converge(multiply, add, subtract)(1, 2);
  *      //≅ multiply( add(1, 2), subtract(1, 2) );
  *      //=> -3
  */
-export default function fork(after) {
+export default function converge(after) {
     var fns = _slice(arguments, 1);
     return function() {
         var args = arguments;

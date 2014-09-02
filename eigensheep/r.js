@@ -24,6 +24,7 @@ import construct from "./construct";
 import constructN from "./construct_n";
 import contains from "./contains";
 import containsWith from "./contains_with";
+import converge from "./converge";
 import countBy from "./count_by";
 import curry from "./curry";
 import difference from "./difference";
@@ -44,7 +45,6 @@ import flip from "./flip";
 import foldl from "./foldl";
 import foldr from "./foldr";
 import forEach from "./for_each";
-import fork from "./fork";
 import fromPairs from "./from_pairs";
 import func from "./func";
 import functions from "./functions";
@@ -188,6 +188,7 @@ var R = {
     constructN: constructN,
     contains: contains,
     containsWith: containsWith,
+    converge: converge,
     countBy: countBy,
     curry: curry,
     difference: difference,
@@ -208,7 +209,6 @@ var R = {
     foldl: foldl,
     foldr: foldr,
     forEach: forEach,
-    fork: fork,
     fromPairs: fromPairs,
     func: func,
     functions: functions,
