@@ -1,6 +1,11 @@
 {
-  "framework": "qunit",
+  "framework": "mocha",
   "cwd": ".",
-  "src_files": ["eigensheep/**/*.js", "test/**/*.js"],
-  "serve_files": ["dist/assets/eigensheep.amd.loader.js", "test/*/**/*.js"]
+  "src_files": ["dist/assets/eigensheep.global.js", "test/*.js"],
+  "serve_files": [
+    "test-lib/require-shim.js",
+    "dist/assets/eigensheep.global.js",
+    "test-lib/expect.js",
+    "test-lib/assert-shim.js",
+    "test/*.js"]
 }
